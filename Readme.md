@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Роман Вахитов](https://up.htmlacademy.ru/adaptive/20/user/1389537).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Кислый](https://up.htmlacademy.ru/adaptive/20/user/1118577).
 
 ---
 
