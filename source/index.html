@@ -4,21 +4,25 @@
 <head>
 	<meta charset="utf-8">
 	<title>Кэт Энерджи</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body class="page__body">
 	<header class="page-header">
-		<a href="#" class="logo page-header__logo" aria-label="Кэт Энерджи">
-			<img src="img/logo-mobile.svg" width="191" height="38" alt="Кэт Энерджи">
-		</a>
-		<nav class="main-nav">
-			<button class="main-nav__toggle" type="button">
+		<div class="page-header__wrapper page-header__wrapper--active-menu">
+			<a href="#" class="logo page-header__logo" aria-label="Кэт Энерджи">
+				<img src="img/logo-mobile.svg" width="191" height="38" alt="Кэт Энерджи">
+			</a>
+			<button class="menu-toggle menu-toggle--active" type="button">
 				<span class="visually-hidden">Открыть меню</span>
 			</button>
+		</div>
+		<nav class="main-nav">
 			<ul class="main-nav__list site-list site-list__item--active">
-				<li class="site-list__item"><a href="#">Главная</a></li>
-				<li class="site-list__item"><a href="#">Каталог продукции</a></li>
-				<li class="site-list__item"><a href="#">Подбор программы</a></li>
+				<li class="site-list__item"><a class="site-list__link" href="#">Главная</a></li>
+				<li class="site-list__item"><a class="site-list__link" href="#">Каталог продукции</a></li>
+				<li class="site-list__item"><a class="site-list__link" href="#">Подбор программы</a></li>
 			</ul>
 		</nav>
 	</header>
