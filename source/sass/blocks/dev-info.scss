@@ -1,0 +1,20 @@
+.dev-info {
+    width: 100%;
+    border-top: solid 1px $borderGrey;
+    box-sizing: border-box;
+}
+
+.dev-info__title {
+    font-family: $Arial;
+    font-size: 16px;
+    line-height: 18px;
+    color: $deepGraphite;
+}
+
+.dev-info__link {
+    width: 39px;
+}
+
+.dev-info__logo path {
+    fill: $darkGrey;
+}

@@ -1,0 +1,19 @@
+.catalog__title {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 27px;
+    padding-bottom: 40px;
+    border-bottom: solid 1px $borderGrey;
+}
+
+.catalog__list {
+    list-style: none;
+    padding: 0;
+}
+
+.catalog__item {
+    border-bottom: solid 1px $borderGrey;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

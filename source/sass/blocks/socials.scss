@@ -1,0 +1,29 @@
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.socials__item {
+    display: block;
+    box-sizing: border-box;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &--vk{
+        width: 22px;
+        height: 12px;
+        background-image: url('../img/icon-vk.svg');
+    }
+    &--inst {
+        width: 16px;
+        height: 16px;
+        background-image: url('../img/icon-insta.svg');
+    }
+    &--fb{
+        width: 10px;
+        height: 18px;
+        background-image: url('../img/icon-fb.svg');
+    }
+}
