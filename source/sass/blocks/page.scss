@@ -3,9 +3,9 @@
 }
 .page__body {
 	margin: 0;
-	font-family: 'Oswald', 'Arial', sans-serif;
+	font-family: $Oswald, $Arial;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 18px;
-	color: black;
+	color: $black;
 }

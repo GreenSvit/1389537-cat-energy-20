@@ -1,13 +1,9 @@
-.catalog {
-    
-}
-
 .catalog__title {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 27px;
     padding-bottom: 40px;
-    border-bottom: solid 1px #d9d9d9;
+    border-bottom: solid 1px $borderGrey;
 }
 
 .catalog__list {
@@ -16,7 +12,7 @@
 }
 
 .catalog__item {
-    border-bottom: solid 1px #d9d9d9;
+    border-bottom: solid 1px $borderGrey;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;

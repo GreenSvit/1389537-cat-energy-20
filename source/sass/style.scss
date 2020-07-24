@@ -1,16 +1,23 @@
-@import 'page.scss';
-@import 'visually-hidden.scss';
-@import 'page-header.scss';
-@import 'logo.scss';
-@import 'main-nav.scss';
-@import 'menu-toggle.scss';
-@import 'site-list.scss';
-@import 'main-header.scss';
-@import 'button.scss';
-@import 'page-main.scss';
-@import 'programms.scss';
-@import 'page-footer.scss';
-@import 'socials.scss';
-@import 'dev-info.scss';
-@import 'product-card.scss';
-@import 'catalog.scss';
+// Utils
+
+@import 'utils/fonts.scss';
+@import 'utils/variables.scss';
+@import 'utils/visually-hidden.scss';
+
+// Blocks
+
+@import 'blocks/page.scss';
+@import 'blocks/page-header.scss';
+@import 'blocks/logo.scss';
+@import 'blocks/main-nav.scss';
+@import 'blocks/menu-toggle.scss';
+@import 'blocks/site-list.scss';
+@import 'blocks/main-header.scss';
+@import 'blocks/button.scss';
+@import 'blocks/page-main.scss';
+@import 'blocks/programms.scss';
+@import 'blocks/page-footer.scss';
+@import 'blocks/socials.scss';
+@import 'blocks/dev-info.scss';
+@import 'blocks/product-card.scss';
+@import 'blocks/catalog.scss';
