@@ -1,0 +1,53 @@
+.instructions {
+	max-width: 280px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 27px;
+	padding-bottom: 42px;
+}
+
+.instructions__title {
+}
+
+.instructions__list {
+	list-style: none;
+	padding: 0;
+	margin-top: 38px;
+	margin-bottom: 0;
+	display: grid;
+	gap: 20px;
+}
+
+.instructions__desc {
+	font-family: $Arial;
+	margin: 0;
+	padding: 0;
+}
+
+.instructions__item {
+	padding-left: 80px;
+	position: relative;
+	min-height: 60px;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		background-color: $basicGreen;
+		background-position: center;
+		background-repeat: no-repeat;
+		left: 0;
+	}
+	&--benefit::before {
+		background-image: url('../../img/advantage-leaf@1x.png');
+	}
+	&--cooking::before {
+		background-image: url('../../img/advantage-powder@1x.png');
+	}
+	&--nutrition::before {
+		background-image: url('../../img/advantage-dining@1x.png');
+	}
+	&--time::before {
+		background-image: url('../../img/advantage-clock@1x.png');
+	}
+}

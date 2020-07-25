@@ -1,0 +1,16 @@
+.contrast-slider {
+	text-align: center;
+}
+
+.contrast-slider__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.contrast-slider__item {
+	display: none;
+	&--current {
+		display: block;
+	}
+}
