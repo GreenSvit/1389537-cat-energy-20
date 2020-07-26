@@ -1,0 +1,14 @@
+.contrast-slider {
+	text-align: center;
+}
+
+.contrast-slider__list {
+	@include list-normalize;
+}
+
+.contrast-slider__item {
+	display: none;
+	&--current {
+		display: block;
+	}
+}

@@ -1,0 +1,30 @@
+.additional-goods {
+	padding-top: 28px;
+}
+
+.additional-goods__list {
+	@include list-normalize;
+}
+
+.additional-goods__title {
+	font-size: 24px;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+.additional-goods__item {
+	padding-top: 13px;
+}
+.additional-goods__name {
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin: 0;
+}
+
+.additional-goods__numbers {
+	display: flex;
+	justify-content: space-between;
+}
