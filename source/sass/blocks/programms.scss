@@ -10,6 +10,10 @@
 	margin-top: 3px;
 	display: grid;
 	gap: 20px;
+	@media (min-width: $desktopWidth) {
+		grid-template-columns: 570px 580px;
+		gap: 80px;
+	}
 }
 
 .programms__item {
@@ -19,9 +23,11 @@
 	padding-right: 20px;
 	padding-bottom: 18px;
 	background-color: $shadowWhite;
-	width: 280px;
-	margin-left: auto;
-	margin-right: auto;
+	@media (min-width: $tabletWidth) {
+		padding-top: 77px;
+		padding-bottom: 53px;
+		padding-left: 52px;
+	}
 }
 
 .programms__title {
@@ -59,9 +65,7 @@
 		font-size: 36px;
 		line-height: 36px;
 		padding-left: 0;
-		&::before,
-		&--loss,
-		&--set {
+		&::before {
 			display: none;
 		}
 	}
@@ -74,6 +78,11 @@
 	position: relative;
 	padding-bottom: 23px;
 	border-bottom: solid 1px $borderGrey;
+	@media (min-width: $tabletWidth) {
+		width: 377px;
+		font-size: 16px;
+		line-height: 24px;
+	}
 }
 
 .programms__link {

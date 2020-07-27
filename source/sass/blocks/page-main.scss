@@ -7,4 +7,9 @@
     font-size: 36px;
     line-height: 40px;
     font-weight: normal;
+    @media (min-width: $tabletWidth) {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    
 }
