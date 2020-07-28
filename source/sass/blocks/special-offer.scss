@@ -1,26 +1,37 @@
 .special-offer {
-	padding-top: 65px;
-	box-sizing: border-box;
-	min-height: 289px;
-	background-image: url('../img/gift-photo-mobile@1x.jpg');
-	text-align: center;
+  padding-top: 65px;
+  box-sizing: border-box;
+  min-height: 289px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+
+  @media (min-width: $tabletWidth) {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  @media (min-width: $desktopWidth) {
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+  }
+
+  background-size: cover;
+  text-align: center;
+  width: 100%;
 }
 
 .special-offer__gift {
-	display: block;
-	width: 57px;
-	height: 49px;
-	margin: auto;
+  display: block;
+  width: 57px;
+  height: 49px;
+  margin: auto;
 }
 
 .special-offer__text {
-	display: block;
-	width: 161px;
-	margin-left: auto;
-	margin-right: auto;
-	color: $white;
-	font-size: 16px;
-	line-height: 20px;
-	font-family: $Arial;
-	margin-top: 61px;
+  display: block;
+  width: 161px;
+  margin-left: auto;
+  margin-right: auto;
+  color: $white;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $Arial;
+  margin-top: 61px;
 }
