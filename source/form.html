@@ -69,92 +69,96 @@
           action="https://echo.htmlacademy.ru/"
           method="POST"
         >
-          <fieldset class="program-selection__field">
-            <label class="program-selection__text-label">
-              Имя:*
-              <input
-                class="program-selection__text-input"
-                type="text"
-                required
-                value="Барсик"
-                name="name"
-              />
-            </label>
-            <label class="program-selection__text-label">
-              Вес (кг):*
-              <input
-                class="program-selection__text-input"
-                type="number"
-                required
-                value="7"
-                name="weight"
-              />
-            </label>
-            <label class="program-selection__text-label">
-              Возраст (лет):
-              <input
-                class="program-selection__text-input"
-                type="number"
-                required
-                value="7"
-                name="age"
-              />
-            </label>
-          </fieldset>
-          <fieldset class="program-selection__field">
-            <label class="program-selection__reason-label">
-              Похудение
-              <input
-                class="program-selection__radio-input"
-                type="radio"
-                name="reason"
-                checked
-                value="weight loss"
-              />
-            </label>
-            <label class="program-selection__reason-label">
-              Набор массы
-              <input
-                class="program-selection__radio-input"
-                type="radio"
-                name="reason"
-                value="weight set"
-              />
-            </label>
-            <label class="program-selection__reason-label">
-              Не знаю (нужен ваш ответ)
-              <input
-                class="program-selection__radio-input"
-                type="radio"
-                name="reason"
-                value="dont know"
-              />
-            </label>
+          <div class="programm-selection__main-wrapper">
+            <fieldset class="program-selection__field">
+              <label class="program-selection__text-label">
+                Имя:*
+                <input
+                  class="program-selection__text-input"
+                  type="text"
+                  required
+                  value="Барсик"
+                  name="name"
+                />
+              </label>
+              <label class="program-selection__text-label">
+                Вес (кг):*
+                <input
+                  class="program-selection__text-input"
+                  type="number"
+                  required
+                  value="7"
+                  name="weight"
+                />
+              </label>
+              <label class="program-selection__text-label">
+                Возраст (лет):
+                <input
+                  class="program-selection__text-input"
+                  type="number"
+                  required
+                  value="7"
+                  name="age"
+                />
+              </label>
+            </fieldset>
+            <fieldset class="program-selection__field">
+              <label class="program-selection__reason-label">
+                Похудение
+                <input
+                  class="program-selection__radio-input"
+                  type="radio"
+                  name="reason"
+                  checked
+                  value="weight loss"
+                />
+              </label>
+              <label class="program-selection__reason-label">
+                Набор массы
+                <input
+                  class="program-selection__radio-input"
+                  type="radio"
+                  name="reason"
+                  value="weight set"
+                />
+              </label>
+              <label class="program-selection__reason-label">
+                Не знаю (нужен ваш ответ)
+                <input
+                  class="program-selection__radio-input"
+                  type="radio"
+                  name="reason"
+                  value="dont know"
+                />
+              </label>
+            </div>
           </fieldset>
           <fieldset class="program-selection__field">
             <legend class="program-selection__legend">
               Контактные данные (владельца кота)
             </legend>
-            <label class="program-selection__text-label">
-              E-mail:*
-              <input
-                class="program-selection__text-input program-selection__text-input--email"
-                type="email"
-                value="kuklachev@gmail.com"
-                required
-                name="email"
-              />
-            </label>
-            <label class="program-selection__text-label">
-              Телефон:*
-              <input
-                class="program-selection__text-input program-selection__text-input--tel"
-                type="tel"
-                value="8 (960) 900-60-90"
-                required
-                name="telephone"
-              />
-            </label>
+            <div class="programm-selection__contacts-wrapper">
+              <label class="program-selection__text-label">
+                E-mail:*
+                <input
+                  class="program-selection__text-input program-selection__text-input--email"
+                  type="email"
+                  value="kuklachev@gmail.com"
+                  required
+                  name="email"
+                />
+              </label>
+              <label class="program-selection__text-label">
+                Телефон:*
+                <input
+                  class="program-selection__text-input program-selection__text-input--tel"
+                  type="tel"
+                  value="8 (960) 900-60-90"
+                  required
+                  name="telephone"
+                />
+              </label>
+            </div>
           </fieldset>
           <fieldset class="program-selection__field">
             <legend class="program-selection__legend">Комментарий</legend>
@@ -168,42 +172,44 @@
           </fieldset>
           <fieldset class="program-selection__field">
             <legend class="program-selection__legend">Дополнительно</legend>
-            <label class="program-selection__checkbox-label">
-              Сахарозаменитель
-              <input
-                class="program-selection__checkbox"
-                type="checkbox"
-                name="wishes"
-                value="sugar substitute"
-              />
-            </label>
-            <label class="program-selection__checkbox-label">
-              Питьевая вода
-              <input
-                class="program-selection__checkbox"
-                type="checkbox"
-                name="wishes"
-                value="drinking water"
-              />
-            </label>
-            <label class="program-selection__checkbox-label">
-              Молоко
-              <input
-                class="program-selection__checkbox"
-                type="checkbox"
-                name="wishes"
-                value="milk"
-              />
-            </label>
-            <label class="program-selection__checkbox-label">
-              Витамины
-              <input
-                class="program-selection__checkbox"
-                type="checkbox"
-                name="wishes"
-                value="vitamins"
-              />
-            </label>
+            <div class="program-selection__extra-wrapper">
+              <label class="program-selection__checkbox-label">
+                Сахарозаменитель
+                <input
+                  class="program-selection__checkbox"
+                  type="checkbox"
+                  name="wishes"
+                  value="sugar substitute"
+                />
+              </label>
+              <label class="program-selection__checkbox-label">
+                Питьевая вода
+                <input
+                  class="program-selection__checkbox"
+                  type="checkbox"
+                  name="wishes"
+                  value="drinking water"
+                />
+              </label>
+              <label class="program-selection__checkbox-label">
+                Молоко
+                <input
+                  class="program-selection__checkbox"
+                  type="checkbox"
+                  name="wishes"
+                  value="milk"
+                />
+              </label>
+              <label class="program-selection__checkbox-label">
+                Витамины
+                <input
+                  class="program-selection__checkbox"
+                  type="checkbox"
+                  name="wishes"
+                  value="vitamins"
+                />
+              </label>
+            </div>
           </fieldset>
           <button class="program-selection__submit button" type="submit">
             Отправить заявку

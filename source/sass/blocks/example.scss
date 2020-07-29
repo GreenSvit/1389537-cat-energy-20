@@ -1,5 +1,8 @@
 .example {
   background-color: $lightGrey;
+  @media (min-width: $desktopWidth) {
+    display: flex;
+  }
 }
 
 .example__desc {
@@ -9,7 +12,6 @@
 
 .example__numbers {
   display: flex;
-  justify-content: space-between;
 }
 
 .example__fact {
@@ -18,6 +20,14 @@
   align-items: center;
   font-size: 24px;
   line-height: 24px;
+
+  &:first-child {
+    margin-right: 31px;
+  }
+
+  @media (min-width: $tabletWidth) {
+    margin-right: 42px;
+  }
 }
 
 .example__explanation {
@@ -32,4 +42,23 @@
 .example__costs {
   display: block;
   text-align: center;
+
+  @media (min-width: $tabletWidth) {
+    text-align: right;
+  }
+
+  @media (min-width: $desktopWidth) {
+    text-align: left;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tabletWidth) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktopWidth) {
+    display: block;
+  }
 }

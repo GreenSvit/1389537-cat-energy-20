@@ -71,3 +71,28 @@
 .program-selection__submit {
   font-family: $Oswald;
 }
+
+.program-selection__extra-wrapper {
+  display: grid;
+  @media (min-width: $tabletWidth) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktopWidth) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.programm-selection__contacts-wrapper {
+  @media (min-width: $desktopWidth) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.programm-selection__main-wrapper {
+  @media (min-width: $desktopWidth) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
