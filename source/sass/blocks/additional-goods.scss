@@ -27,6 +27,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktopWidth) {
+    flex-wrap: nowrap;
+  }
 }
 
 .additional-goods__name {
@@ -45,6 +49,10 @@
 .additional-goods__order {
   @media (min-width: $tabletWidth) {
     width: 100%;
+  }
+
+  @media (min-width: $desktopWidth) {
+    width: 244px;
   }
 }
 
