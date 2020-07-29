@@ -1,10 +1,11 @@
 .menu-toggle {
-	border: none;
-	background-color: transparent;
-	background-size: cover;
-	&--active {
-		height: 18px;
-		width: 18px;
-		background-image: url('../img/icon-close.svg');
-	}
+  border: none;
+  background-color: transparent;
+  background-size: cover;
+
+  &--active {
+    height: 18px;
+    width: 18px;
+    background-image: url("../img/icon-close.svg");
+  }
 }

@@ -1,15 +1,15 @@
-@import '../utils/variables.scss';
+@import "../utils/variables.scss";
 
 .page {
-	box-sizing: border-box;
-	min-width: 320px;
+  box-sizing: border-box;
+  min-width: 320px;
 }
 
 .page__body {
-	margin: 0;
-	font-family: $Oswald, $Arial;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 18px;
-	color: $black;
+  margin: 0;
+  font-family: $Oswald;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $black;
 }
