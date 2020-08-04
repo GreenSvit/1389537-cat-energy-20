@@ -1,8 +1,11 @@
 .mobile-wrapper {
-  max-width: 280px;
+  padding-left: 6vw;
+  padding-right: 6vw;
 
   @media (min-width: $tabletWidth) {
     max-width: 708px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: $desktopWidth) {

@@ -19,11 +19,21 @@
   padding-bottom: 24px;
   border-bottom: solid 1px $lighterGrey;
 
+  &:first-child {
+    border-top: solid 1px $lighterGrey;
+  }
+
   @media (min-width: $tabletWidth) {
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
     margin-left: 36px;
+    border-bottom: none;
+    padding: 0;
+
+    &:first-child {
+      border-top: none;
+    }
 
     &--current {
       position: relative;
@@ -37,7 +47,7 @@
       background-color: $basicGreen;
       z-index: 5;
       left: 0;
-      top: 53px;
+      top: 33px;
     }
   }
 }
