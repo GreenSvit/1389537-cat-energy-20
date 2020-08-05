@@ -1,7 +1,13 @@
 .catalog__title {
   padding-top: 27px;
   padding-bottom: 40px;
-  border-bottom: solid 1px $borderGrey;
+  position: relative;
+
+  &::after {
+    @include bottom-border;
+
+    top: 105px;
+  }
 }
 
 .catalog__list {
@@ -20,8 +26,15 @@
 }
 
 .catalog__item {
-  border-bottom: solid 1px $borderGrey;
-  padding-bottom: 10px;
+  padding-bottom: 26px;
+  padding-top: 19px;
+  position: relative;
+
+  &::after {
+    @include bottom-border;
+
+    top: 209px;
+  }
 }
 
 .catalog__show-more {

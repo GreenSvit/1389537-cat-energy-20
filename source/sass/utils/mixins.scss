@@ -8,3 +8,16 @@
   text-decoration: none;
   color: inherit;
 }
+
+@mixin bottom-border {
+  content: "";
+  position: absolute;
+  width: calc(100% + 12vw);
+  height: 1px;
+  background-color: $borderGrey;
+  left: -6vw;
+
+  @media (min-width: $tabletWidth) {
+    display: none;
+  }
+}
