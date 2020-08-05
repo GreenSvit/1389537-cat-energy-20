@@ -26,31 +26,64 @@
 }
 
 .catalog__item {
-  padding-bottom: 26px;
-  padding-top: 19px;
   position: relative;
 
   &::after {
     @include bottom-border;
-
     top: 209px;
   }
 }
 
 .catalog__show-more {
   text-align: center;
+  padding-top: 26px;
+  position: relative;
+
+  &::after {
+    @include bottom-border;
+    top: 209px;
+  }
 }
 
 .catalog__show-more-button {
   display: block;
   width: 30px;
   height: 30px;
+  margin-left: auto;
+  margin-right: auto;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-image: url("../img/icon-plus-mobile.svg");
 }
 
 .catalog__show-all {
   display: block;
+  margin-top: 21px;
+  box-sizing: border-box;
+  max-width: 280px;
   text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 0 94px;
+  color: $deepGraphite;
+  background-color: $shadowWhite;
+}
+
+.catalog__show-more-title {
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 23px;
+}
+
+.catalog__show-more-desc {
+  display: block;
+  font-family: $Arial;
+  font-size: 12px;
+  line-height: 16px;
+  color: $deepGraphite;
+  margin-top: 8px;
 }
