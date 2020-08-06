@@ -1,6 +1,8 @@
 .product-card {
   padding-bottom: 26px;
   padding-top: 19px;
+  padding-left: 36px;
+  padding-right: 36px;
 
   @media (min-width: $tabletWidth) {
     padding-top: 88px;
@@ -56,6 +58,8 @@
 
   @media (min-width: $tabletWidth) {
     margin-top: -73px;
+    width: 168px;
+    height: 200px;
   }
 }
 
@@ -79,4 +83,9 @@
 
 .product-card__order {
   margin-top: 13px;
+  max-width: 248px;
+
+  @media (min-width: $tabletWidth) {
+    margin-top: 33px;
+  }
 }
