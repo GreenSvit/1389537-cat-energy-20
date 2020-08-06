@@ -52,15 +52,19 @@
       z-index: 5;
       left: 0;
       top: 33px;
-
-      @media (min-width: $desktopWidth) {
-        background-color: $white;
-      }
     }
 
     @media (min-width: $desktopWidth) {
       font-size: 20px;
       line-height: 30px;
+
+      &--index {
+        color: $white;
+
+        &::after {
+          background-color: $white;
+        }
+      }
     }
   }
 }

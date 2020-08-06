@@ -5,9 +5,14 @@
   padding-right: 36px;
 
   @media (min-width: $tabletWidth) {
-    padding-top: 88px;
+    padding-top: 81px;
     padding-bottom: 40px;
     background-color: $shadowWhite;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding-left: 38px;
+    padding-right: 38px;
   }
 }
 
@@ -61,6 +66,10 @@
     width: 168px;
     height: 200px;
   }
+
+  @media (min-width: $tabletWidth) {
+    margin-top: -80px;
+  }
 }
 
 .product-card__name {
@@ -87,5 +96,9 @@
 
   @media (min-width: $tabletWidth) {
     margin-top: 33px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    max-width: 168px;
   }
 }
