@@ -1,6 +1,6 @@
 @import "../utils/variables.scss";
 
-.programms__list {
+.programs__list {
   @include list-normalize;
   margin-top: 3px;
   display: grid;
@@ -12,7 +12,7 @@
   }
 }
 
-.programms__item {
+.programs__item {
   box-sizing: border-box;
   padding-left: 20px;
   padding-top: 21px;
@@ -31,7 +31,7 @@
   }
 }
 
-.programms__title {
+.programs__title {
   text-transform: uppercase;
   margin: 0;
   font-size: 24px;
@@ -96,7 +96,7 @@
   }
 }
 
-.programms__desc {
+.programs__desc {
   margin-top: 29px;
   font-family: $Arial;
   color: $deepGraphite;
@@ -116,7 +116,7 @@
   }
 }
 
-.programms__link {
+.programs__link {
   margin-top: 19px;
   text-decoration: none;
   font-size: 16px;

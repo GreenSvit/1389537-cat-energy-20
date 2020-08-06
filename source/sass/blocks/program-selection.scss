@@ -84,14 +84,14 @@
   }
 }
 
-.programm-selection__contacts-wrapper {
+.program-selection__contacts-wrapper {
   @media (min-width: $desktopWidth) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 
-.programm-selection__main-wrapper {
+.program-selection__main-wrapper {
   @media (min-width: $desktopWidth) {
     display: grid;
     grid-template-columns: 1fr 1fr;
