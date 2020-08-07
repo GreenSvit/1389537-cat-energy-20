@@ -11,7 +11,7 @@
     <header class="page-header">
       <div class="page-header__wrapper page-header__wrapper--active-menu">
         <a
-          href="#"
+          href="index.html"
           class="page-header__logo page-header__logo--mobile"
           aria-label="Кэт Энерджи"
         >
@@ -19,18 +19,6 @@
             src="img/logo-mobile.svg"
             width="191"
             height="38"
-            alt="Кэт Энерджи"
-          />
-        </a>
-        <a
-          href="#"
-          class="page-header__logo page-header__logo--tablet"
-          aria-label="Кэт Энерджи"
-        >
-          <img
-            src="img/logo-tablet.svg"
-            width="174"
-            height="52"
             alt="Кэт Энерджи"
           />
         </a>
@@ -43,13 +31,13 @@
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list site-list site-list--active">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--current">
             <a class="site-list__link" href="#">Подбор программы</a>
           </li>
         </ul>
@@ -69,7 +57,7 @@
           action="https://echo.htmlacademy.ru/"
           method="POST"
         >
-          <div class="programm-selection__main-wrapper">
+          <div class="program-selection__main-wrapper">
             <fieldset class="program-selection__field">
               <label class="program-selection__text-label">
                 Имя:*
@@ -131,13 +119,13 @@
                   value="dont know"
                 />
               </label>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
           <fieldset class="program-selection__field">
             <legend class="program-selection__legend">
               Контактные данные (владельца кота)
             </legend>
-            <div class="programm-selection__contacts-wrapper">
+            <div class="program-selection__contacts-wrapper">
               <label class="program-selection__text-label">
                 E-mail:*
                 <input
@@ -219,23 +207,29 @@
           >* — Обязательные поля</span
         >
       </section>
-      <section class="contacts mobile-wrapper">
+      <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts-wrapper">
+        <div class="mobile-wrapper contacts__wrapper">
           <span class="contacts__title"
             >Приглашаем к сотрудничеству дилеров!</span
           >
           <address class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8<br />
+            Санкт-Петербург
           </address>
         </div>
         <div class="contacts__map">
-          Карта
+          <img
+            src="img/bg-map-mobile@1x.png"
+            alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"
+            width="320"
+            height="400"
+          />
         </div>
       </section>
     </main>
     <footer class="page-footer mobile-wrapper">
-      <a href="#" class="logo page-footer__logo" aria-label="Кэт Энерджи">
+      <a href="index.html" class="logo page-footer__logo" aria-label="Кэт Энерджи">
         <img
           src="img/logo-footer.svg"
           width="128"
@@ -266,9 +260,9 @@
           ></a>
         </li>
       </ul>
-      <div class="page-footer__dev-info dev-info mobile-wrapper">
-        <span class="dev-info__title">HTML Academy</span>
-        <a class="dev-info__link" href="#" aria-label="HTML Academy">
+      <div class="page-footer__dev-info dev-info">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="dev-info__title">HTML Academy</a>
+        <a class="dev-info__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
           <svg
             class="dev-info__logo"
             xmlns="http://www.w3.org/2000/svg"

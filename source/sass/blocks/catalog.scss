@@ -1,7 +1,13 @@
 .catalog__title {
   padding-top: 27px;
   padding-bottom: 40px;
-  border-bottom: solid 1px $borderGrey;
+  position: relative;
+
+  &::after {
+    @include bottom-border;
+
+    top: 105px;
+  }
 }
 
 .catalog__list {
@@ -20,24 +26,111 @@
 }
 
 .catalog__item {
-  border-bottom: solid 1px $borderGrey;
-  padding-bottom: 10px;
+  position: relative;
+
+  &::after {
+    @include bottom-border;
+    top: 209px;
+  }
 }
 
 .catalog__show-more {
   text-align: center;
+  padding-top: 26px;
+  position: relative;
+  box-sizing: border-box;
+
+  &::after {
+    @include bottom-border;
+    top: 209px;
+  }
+
+  @media (min-width: $tabletWidth) {
+    padding-bottom: 36px;
+    border: 2px solid $shadowWhite;
+    padding-top: 50px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding-bottom: 39px;
+  }
 }
 
 .catalog__show-more-button {
   display: block;
   width: 30px;
   height: 30px;
+  margin-left: auto;
+  margin-right: auto;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-image: url("../img/icon-plus-mobile.svg");
+
+  @media (min-width: $tabletWidth) {
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-plus.svg");
+  }
 }
 
 .catalog__show-all {
   display: block;
+  margin-top: 21px;
+  box-sizing: border-box;
+  width: 280px;
   text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 0;
+  color: $deepGraphite;
+  background-color: $shadowWhite;
+
+  @media (min-width: $tabletWidth) {
+    margin-top: 87px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    width: 169px;
+  }
+}
+
+.catalog__show-more-title {
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 23px;
+
+  @media (min-width: $tabletWidth) {
+    font-size: 20px;
+    line-height: 22px;
+    max-width: 134px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 49px;
+  }
+}
+
+.catalog__show-more-desc {
+  display: block;
+  font-family: $Arial;
+  font-size: 12px;
+  line-height: 16px;
+  color: $deepGraphite;
+  margin-top: 8px;
+
+  @media (min-width: $tabletWidth) {
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 167px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 23px;
+  }
 }

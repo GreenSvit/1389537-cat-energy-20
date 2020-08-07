@@ -1,5 +1,4 @@
 .dev-info {
-  border-top: solid 1px $borderGrey;
   box-sizing: border-box;
 }
 
@@ -8,10 +7,12 @@
   font-size: 16px;
   line-height: 18px;
   color: $deepGraphite;
+  text-decoration: none;
 }
 
 .dev-info__link {
   width: 39px;
+  text-decoration: none;
 }
 
 .dev-info__logo path {
