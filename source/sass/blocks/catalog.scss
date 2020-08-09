@@ -1,3 +1,7 @@
+.catalog {
+  padding-bottom: 25px;
+}
+
 .catalog__title {
   padding-top: 27px;
   padding-bottom: 40px;
@@ -21,7 +25,7 @@
 
   @media (min-width: $desktopWidth) {
     grid-template-columns: 245px 245px 245px 245px;
-    gap: 80px 63px;
+    gap: 63px 80px;
   }
 }
 

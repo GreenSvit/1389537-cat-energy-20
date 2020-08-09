@@ -1,20 +1,23 @@
 .example {
-  background-color: $lightGrey;
   padding-top: 27px;
   padding-bottom: 21px;
 
   @media (min-width: $tabletWidth) {
     padding-bottom: 43px;
-    background: linear-gradient(
-      to bottom,
-      $white,
-      $white 619px,
-      $lightGrey 619px,
-      $lightGrey
-    );
   }
+
   @media (min-width: $desktopWidth) {
     display: flex;
+    justify-content: space-between;
+    padding-bottom: 67px;
+  }
+}
+
+.example__title {
+  width: 100%;
+
+  @media (min-width: $desktopWidth) {
+    padding-top: 69px;
   }
 }
 
@@ -29,11 +32,20 @@
     line-height: 24px;
     width: 700px;
   }
+
+  @media (min-width: $desktopWidth) {
+    margin-top: 146px;
+    width: 436px;
+  }
 }
 
 .example__numbers {
   justify-content: center;
   display: flex;
+
+  @media (min-width: $desktopWidth) {
+    justify-content: flex-start;
+  }
 }
 
 .example__fact {
@@ -83,6 +95,10 @@
     background-color: $white;
     top: 60px;
   }
+
+  @media (min-width: $desktopWidth) {
+    background-color: $lightGrey;
+  }
 }
 
 .example__costs {
@@ -100,7 +116,11 @@
   }
 
   @media (min-width: $desktopWidth) {
+    max-width: 327px;
     text-align: left;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -115,5 +135,6 @@
 
   @media (min-width: $desktopWidth) {
     display: block;
+    margin-top: 69px;
   }
 }

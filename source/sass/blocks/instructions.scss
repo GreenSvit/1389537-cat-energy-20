@@ -16,6 +16,10 @@
       width: 100vw;
       height: 1px;
       background-color: $lighterGrey;
+
+      @media (min-width: $desktopWidth) {
+        display: none;
+      }
     }
   }
 

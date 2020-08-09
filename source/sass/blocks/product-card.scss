@@ -1,13 +1,13 @@
 .product-card {
   padding-bottom: 26px;
   padding-top: 19px;
-  padding-left: 36px;
-  padding-right: 36px;
 
   @media (min-width: $tabletWidth) {
     padding-top: 81px;
     padding-bottom: 40px;
     background-color: $shadowWhite;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 
   @media (min-width: $desktopWidth) {
@@ -92,10 +92,12 @@
 
 .product-card__order {
   margin-top: 13px;
-  max-width: 248px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tabletWidth) {
     margin-top: 33px;
+    max-width: 248px;
   }
 
   @media (min-width: $desktopWidth) {

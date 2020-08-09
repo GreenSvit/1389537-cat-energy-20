@@ -35,6 +35,10 @@
     grid-template-columns: 163px 155px;
     gap: 87px;
   }
+
+  &--catalog {
+    background-color: $shadowWhite;
+  }
 }
 
 .contacts__title {

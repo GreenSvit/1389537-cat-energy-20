@@ -5,6 +5,11 @@
     height: 650px;
     // Временное решение до импорта графики
   }
+
+  @media (min-width: $desktopWidth) {
+    height: 589px;
+    // Временное решение до импорта графики
+  }
 }
 
 .contrast-slider__list {
