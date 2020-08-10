@@ -1,5 +1,5 @@
-.page-main__programms {
-  margin-top: 3px;
+.page-main__programs {
+  margin-top: 22px;
 
   @media (min-width: $tabletWidth) {
     margin-top: 0;
@@ -19,5 +19,17 @@
   @media (min-width: $tabletWidth) {
     font-size: 60px;
     line-height: 60px;
+  }
+}
+
+.page-main__example-wrapper {
+  background-color: $lightGrey;
+
+  @media (min-width: $tabletWidth) {
+    background: linear-gradient(to bottom, $white, $white 619px, $lightGrey 619px, $lightGrey);
+  }
+
+  @media (min-width: $desktopWidth) {
+    background: linear-gradient(to bottom, $white, $white 194px, $lightGrey 194px, $lightGrey);
   }
 }

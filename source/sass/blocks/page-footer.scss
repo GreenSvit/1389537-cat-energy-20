@@ -1,6 +1,13 @@
 .page-footer {
   padding-bottom: 21px;
+  background-color: $shadowWhite;
 
+  @media (min-width: $tabletWidth) {
+    padding-bottom: 0;
+  }
+}
+
+.page-footer__wrapper {
   @media (min-width: $tabletWidth) {
     display: flex;
     justify-content: space-between;

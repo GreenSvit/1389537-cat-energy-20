@@ -1,10 +1,26 @@
 .instructions {
   padding-top: 27px;
   padding-bottom: 42px;
+  position: relative;
 
   @media (min-width: $tabletWidth) {
     padding-top: 45px;
     padding-bottom: 104px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin-left: calc((-100vw + 708px) / 2);
+      width: 100vw;
+      height: 1px;
+      background-color: $lighterGrey;
+
+      @media (min-width: $desktopWidth) {
+        display: none;
+      }
+    }
   }
 
   @media (min-width: $desktopWidth) {
@@ -15,7 +31,7 @@
 
 .instructions__list {
   @include list-normalize;
-  margin-top: 72px;
+  margin-top: 38px;
   margin-bottom: 0;
   display: grid;
   gap: 20px;

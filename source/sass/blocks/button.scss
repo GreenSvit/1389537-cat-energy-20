@@ -10,4 +10,9 @@
   text-decoration: none;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: $tabletWidth) {
+    padding-bottom: 13px;
+    padding-top: 13px;
+  }
 }

@@ -1,5 +1,15 @@
 .contrast-slider {
   text-align: center;
+
+  @media (min-width: $tabletWidth) {
+    height: 650px;
+    // Временное решение до импорта графики
+  }
+
+  @media (min-width: $desktopWidth) {
+    height: 589px;
+    // Временное решение до импорта графики
+  }
 }
 
 .contrast-slider__list {
@@ -11,5 +21,15 @@
 
   &--current {
     display: block;
+  }
+}
+
+.contrast-slider__indicator {
+  margin-top: 27px;
+  text-transform: uppercase;
+
+  @media (min-width: $tabletWidth) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
