@@ -23,7 +23,7 @@
 }
 
 @mixin green-line {
-  content: '';
+  content: "";
   position: absolute;
   background-color: $basicGreen;
   height: 2px;

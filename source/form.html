@@ -90,7 +90,9 @@
                 />
               </label>
             </fieldset>
-            <fieldset class="program-selection__field">
+            <fieldset
+              class="program-selection__field program-selection__field--reason"
+            >
               <label class="program-selection__reason-label">
                 Похудение
                 <input
@@ -121,7 +123,9 @@
               </label>
             </fieldset>
           </div>
-          <fieldset class="program-selection__field">
+          <fieldset
+            class="program-selection__field program-selection__field--contacts"
+          >
             <legend class="program-selection__legend">
               Контактные данные (владельца кота)
             </legend>
@@ -148,17 +152,20 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="program-selection__field">
-            <legend class="program-selection__legend">Комментарий</legend>
+          <label
+            class="program-selection__legend program-selection__legend--comment"
+            >Комментарий
             <textarea
               class="program-selection__textarea"
               name="comment"
-              cols="30"
-              rows="10"
+              cols="32"
+              rows="7"
               placeholder="Расскажите обо всех повадках кота"
             ></textarea>
-          </fieldset>
-          <fieldset class="program-selection__field">
+          </label>
+          <fieldset
+            class="program-selection__field program-selection__field--extra"
+          >
             <legend class="program-selection__legend">Дополнительно</legend>
             <div class="program-selection__extra-wrapper">
               <label class="program-selection__checkbox-label">
@@ -199,13 +206,15 @@
               </label>
             </div>
           </fieldset>
-          <button class="program-selection__submit button" type="submit">
-            Отправить заявку
-          </button>
+          <div class="program-selection__submit-wrapper">
+            <button class="program-selection__submit button" type="submit">
+              Отправить заявку
+            </button>
+            <span class="program-selection__required-info"
+              >* — Обязательные поля</span
+            >
+          </div>
         </form>
-        <span class="program-selection__required-info"
-          >* — Обязательные поля</span
-        >
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
