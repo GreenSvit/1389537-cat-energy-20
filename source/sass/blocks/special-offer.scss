@@ -4,15 +4,27 @@
   min-height: 289px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
   @media (min-width: $tabletWidth) {
     display: flex;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktopWidth) {
     display: block;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     height: 289px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   background-size: cover;

@@ -88,6 +88,10 @@
     background-position: center 0;
     padding-top: 25px;
     text-align: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
   }
 
   @media (min-width: $desktopWidth) {

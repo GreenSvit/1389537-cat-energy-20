@@ -25,6 +25,10 @@
   @media (min-width: $desktopWidth) {
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }
 
