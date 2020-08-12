@@ -137,3 +137,15 @@
     margin-top: 69px;
   }
 }
+
+.example__slider {
+  margin-top: 40px;
+
+  @media (min-width: $tabletWidth) {
+    margin-top: 70px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin-top: 0;
+  }
+}

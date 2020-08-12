@@ -50,33 +50,8 @@
   margin-left: auto;
   margin-right: auto;
 
-  &--tablet {
-    display: none;
-  }
-
-  &--desktop {
-    display: none;
-  }
-
-  @media (min-width: $tabletWidth) {
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
-  }
-
   @media (min-width: $desktopWidth) {
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
-    margin-top: 0;
+    margin-left: -54px;
   }
 }
 
@@ -88,6 +63,10 @@
     background-position: center 0;
     padding-top: 25px;
     text-align: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
   }
 
   @media (min-width: $desktopWidth) {

@@ -4,9 +4,14 @@
 
 .contacts__map {
   text-align: center;
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-size: cover;
   height: 362px;
+  width: auto;
+  overflow: hidden;
+
+  @media (min-width: $tabletWidth) {
+    height: 400px;
+    width: auto;
+  }
 }
 
 .contacts__wrapper {
