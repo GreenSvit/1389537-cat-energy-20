@@ -12,6 +12,11 @@
 
     top: 105px;
   }
+
+  @media (min-width: $tabletWidth) {
+    padding: 0;
+    margin-top: 64px;
+  }
 }
 
 .catalog__list {
@@ -20,12 +25,13 @@
   @media (min-width: $tabletWidth) {
     display: grid;
     grid-template-columns: 324px 324px;
-    gap: 60px;
+    gap: 140px 60px;
+    margin-top: 164px;
   }
 
   @media (min-width: $desktopWidth) {
     grid-template-columns: 245px 245px 245px 245px;
-    gap: 63px 80px;
+    gap: 144px 80px;
   }
 }
 

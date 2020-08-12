@@ -68,8 +68,18 @@
     line-height: 36px;
     padding-left: 0;
 
-    &::before {
-      display: none;
+    &--loss::before {
+      top: 4px;
+      left: 389px;
+      width: 200px;
+      height: 211px;
+    }
+
+    &--set::before {
+      top: 20px;
+      width: 268px;
+      height: 200px;
+      left: 369px;
     }
   }
 

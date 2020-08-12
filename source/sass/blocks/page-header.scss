@@ -56,19 +56,30 @@
 
 .page-header__logo {
   text-decoration: none;
-  width: 191px;
   height: 38px;
   margin-left: 20px;
 
   @media (min-width: $tabletWidth) {
     margin-left: 30px;
-    width: 174px;
     height: 52px;
   }
 
   @media (min-width: $desktopWidth) {
     margin-left: 110px;
-    width: 202px;
     height: 59px;
+  }
+}
+
+.page-header__logo img {
+  width: 191px;
+  height: 38px;
+
+  @media (min-width: $tabletWidth) {
+    width: 174px;
+    height: auto;
+  }
+
+  @media (min-width: $desktopWidth) {
+    width: 202px;
   }
 }

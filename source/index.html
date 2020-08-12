@@ -57,28 +57,29 @@
               >Занялся собой? Займись котом!</span
             >
           </div>
-          <img
-            class="main-header__pic main-header__pic--mobile"
-            src="img/index-can-mobile@1x.png"
-            width="280"
-            height="270"
-            alt="Cat Energy Pro Курица"
-          />
-          <img
-            class="main-header__pic main-header__pic--tablet"
-            src="img/index-can-tablet@1x.jpg"
-            width="709"
-            height="609"
-            alt="Cat Energy Pro Курица"
-          />
-
-          <img
-            class="main-header__pic main-header__pic--desktop"
-            src="img/index-can-desktop@1x.png"
-            width="552"
-            height="499"
-            alt="Cat Energy Pro Курица"
-          />
+          <p class="main-header__pic">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  img/index-can-desktop@1x.png 1x,
+                  img/index-can-desktop@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/index-can-tablet@1x.jpg 1x,
+                  img/index-can-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                src="img/index-can-mobile@1x.png"
+                srcset="img/index-can-mobile@2x.png 2x"
+                alt="Cat Energy Pro Курица"
+              />
+            </picture>
+          </p>
         </div>
         <div class="mobile-wrapper">
           <a class="main-header__btn button" href="form.html"
@@ -164,25 +165,53 @@
               </span>
             </div>
           </div>
-          <div class="contrast-slider">
+          <div class="example__slider contrast-slider">
             <ul class="example__contrast contrast-slider__list">
               <li class="contrast-slider__item contrast-slider__item--current">
-                <img
-                  src="img/before-mobile@1x.png"
-                  class="example__pic"
-                  width="320"
-                  height="240"
-                  alt="Толстый кот"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/before-desktop@1x.png 1x,
+                      img/before-desktop@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/before-tablet@1x.png 1x,
+                      img/before-tablet@2x.png 2x
+                    "
+                  />
+                  <img
+                    src="img/before-mobile@1x.png"
+                    srcset="img/before-mobile@2x.png 2x"
+                    alt="До"
+                  />
+                </picture>
               </li>
               <li class="contrast-slider__item">
-                <img
-                  src="https://via.placeholder.com/150x150"
-                  class="example__pic"
-                  width="150"
-                  height="150"
-                  alt="Худой кот"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/after-desktop@1x.png 1x,
+                      img/after-desktop@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/after-tablet@1x.png 1x,
+                      img/after-tablet@2x.png 2x
+                    "
+                  />
+                  <img
+                    src="img/after-mobile@1x.png"
+                    srcset="img/after-mobile@2x.png 2x"
+                    alt="После"
+                  />
+                </picture>
               </li>
             </ul>
             <div class="contrast-slider__indicator">
