@@ -70,9 +70,6 @@
     overflow: visible;
   }
 
-  @media (min-width: $desktopWidth) {
-  }
-
   &--big {
     @media (min-width: $tabletWidth) {
       top: -72px;
