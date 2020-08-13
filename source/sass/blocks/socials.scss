@@ -9,24 +9,54 @@
 .socials__item {
   display: block;
   box-sizing: border-box;
-  background-size: contain;
-  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
 
   &--vk {
     width: 22px;
     height: 12px;
-    background-image: url("../img/icon-vk.svg");
+
+    & .social__icon {
+      @media (min-width: $tabletWidth) {
+        width: 29px;
+        height: 17px;
+      }
+    }
   }
 
   &--inst {
     width: 16px;
     height: 16px;
-    background-image: url("../img/icon-insta.svg");
+
+    & .social__icon {
+      @media (min-width: $tabletWidth) {
+        width: 23px;
+        height: 23px;
+      }
+    }
   }
 
   &--fb {
     width: 10px;
     height: 18px;
-    background-image: url("../img/icon-fb.svg");
+
+    & .social__icon {
+      @media (min-width: $tabletWidth) {
+        width: 13px;
+        height: 27px;
+      }
+    }
+  }
+
+  & .social__icon {
+    fill: $darkGrey;
+  }
+
+  &:hover .social__icon {
+    fill: $basicGreen;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
