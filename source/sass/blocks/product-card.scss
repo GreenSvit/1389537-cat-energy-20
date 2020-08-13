@@ -20,13 +20,12 @@
 .product-card__wrapper {
   display: flex;
   justify-content: space-between;
+  max-width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tabletWidth) {
     display: block;
   }
-
-  max-width: 280px;
-  margin: 0 auto;
 }
 
 .product-card__parameters {
