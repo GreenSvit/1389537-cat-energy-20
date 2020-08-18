@@ -108,6 +108,15 @@
   @media (min-width: $desktopWidth) {
     width: 169px;
   }
+
+  &:hover {
+    background-color: $specialGrey;
+  }
+
+  &:active {
+    background-color: $specialGrey;
+    color: rgba($deepGraphite, 0.3);
+  }
 }
 
 .catalog__show-more-title {

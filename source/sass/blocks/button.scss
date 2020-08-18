@@ -15,4 +15,13 @@
     padding-bottom: 13px;
     padding-top: 13px;
   }
+
+  &:hover {
+    background-color: $basicGreen2;
+  }
+
+  &:active {
+    background-color: $basicGreen2;
+    color: rgba($white, 0.3);
+  }
 }

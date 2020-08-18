@@ -1,5 +1,15 @@
 .dev-info {
   box-sizing: border-box;
+
+  &:hover {
+    .dev-info__logo {
+      fill: $basicGreen;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .dev-info__title {
@@ -11,10 +21,10 @@
 }
 
 .dev-info__link {
-  width: 39px;
+  width: 37px;
   text-decoration: none;
 }
 
-.dev-info__logo path {
+.dev-info__logo {
   fill: $darkGrey;
 }

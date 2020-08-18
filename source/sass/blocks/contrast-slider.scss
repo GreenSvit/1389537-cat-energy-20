@@ -27,9 +27,64 @@
 .contrast-slider__indicator {
   margin-top: 27px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: $tabletWidth) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.contrast-slider__status {
+  @media (min-width: $tabletWidth) {
+    border-bottom: 1px dotted $specialGrey2;
+  }
+}
+
+.contrast-slider__toggle {
+  box-sizing: border-box;
+  display: block;
+  width: 84px;
+  height: 14px;
+  border: 1px solid $lighterGrey2;
+  border-radius: 8px;
+  background-color: $white;
+  position: relative;
+  margin-left: 12px;
+  margin-right: 13px;
+
+  @media (min-width: $tabletWidth) {
+    margin-left: 24px;
+    margin-right: 20px;
+    width: 428px;
+    height: 6px;
+    border: none;
+    border-radius: 3px;
+    background-color: $ligherGrey3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 35px;
+    height: 6px;
+    top: 3px;
+    left: 6px;
+    border-radius: 3px;
+    background-color: $basicGreen;
+
+    @media (min-width: $tabletWidth) {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid $lighterGrey2;
+      box-shadow: inset 0 0 0 12px $white, 0 1px 3px rgba(0, 0, 0, 0.16);
+      top: -14px;
+      left: 197px;
+      cursor: pointer;
+    }
   }
 }
