@@ -16,7 +16,7 @@
     width: 22px;
     height: 12px;
 
-    & .social__icon {
+    & .socials__icon {
       @media (min-width: $tabletWidth) {
         width: 29px;
         height: 17px;
@@ -28,7 +28,7 @@
     width: 16px;
     height: 16px;
 
-    & .social__icon {
+    & .socials__icon {
       @media (min-width: $tabletWidth) {
         width: 23px;
         height: 23px;
@@ -40,7 +40,7 @@
     width: 10px;
     height: 18px;
 
-    & .social__icon {
+    & .socials__icon {
       @media (min-width: $tabletWidth) {
         width: 13px;
         height: 27px;
@@ -48,11 +48,11 @@
     }
   }
 
-  & .social__icon {
+  & .socials__icon {
     fill: $darkGrey;
   }
 
-  &:hover .social__icon {
+  &:hover .socials__icon {
     fill: $basicGreen;
   }
 
