@@ -60,11 +60,12 @@
 
   &--reason {
     margin-top: 26px;
+    color: $black3;
 
     @media (min-width: $tabletWidth) {
       margin-top: 71px;
       padding-top: 30px;
-      padding-left: 0;
+      padding-left: 27px;
       padding-right: 0;
       max-width: 628px;
       border: 1px solid $lightGrey;
@@ -148,14 +149,21 @@
 
 .program-selection__checkbox-label,
 .program-selection__reason-label {
+  cursor: pointer;
+  position: relative;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   margin-top: 25px;
-  padding-left: 36px;
+  padding-left: 45px;
 
   &:first-child {
     margin-top: 0;
+  }
+
+  &:hover .program-selection__checkbox,
+  &:hover .program-selection__radio-input {
+    border-color: $specialGrey3;
   }
 
   @media (min-width: $tabletWidth) {
@@ -165,15 +173,66 @@
   }
 }
 
+.program-selection__reason-label {
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .program-selection__checkbox-label {
+  &:active {
+    color: rgba($black, 0.3);
+
+    & .program-selection__checkbox {
+      border-color: rgba($specialGrey3, 0.3);
+    }
+  }
+
   @media (min-width: $tabletWidth) {
     margin: 0;
   }
 }
 
-.program-selection__checkbox,
-.program-selection__radio-input {
+.program-selection__input-default {
   display: none;
+}
+
+.program-selection__radio-input,
+.program-selection__checkbox {
+  position: absolute;
+  left: 0;
+  top: -6px;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $lighterGrey2;
+  background-color: $white;
+
+  @media (min-width: $tabletWidth) {
+    width: 40px;
+    height: 40px;
+    top: -5px;
+  }
+}
+
+.program-selection__radio-input {
+  border-radius: 50%;
+}
+
+.program-selection__input-default:checked + .program-selection__radio-input {
+  background-color: $basicGreen;
+  box-shadow: inset 0 0 0 7px $white;
+
+  @media (min-width: $tabletWidth) {
+    box-shadow: inset 0 0 0 10px $white;
+  }
+}
+
+.program-selection__input-default:checked + .program-selection__checkbox {
+  background-image: url("../img/icon-tick.svg");
+  background-size: 18px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .program-selection__text-input {
@@ -189,14 +248,14 @@
   color: $deepGraphite;
 
   &--email {
-    background-image: url("../img/icon-mail.svg");
+    background-image: url("../img/sprite-icon-mail.svg");
     background-repeat: no-repeat;
     background-size: 20px 14px;
     background-position: right 15px bottom 50%;
   }
 
   &--tel {
-    background-image: url("../img/icon-phone.svg");
+    background-image: url("../img/sprite-icon-phone.svg");
     background-repeat: no-repeat;
     background-size: 20px 20px;
     background-position: right 15px bottom 50%;
@@ -256,6 +315,7 @@
   font-family: $Oswald;
   margin-top: 17px;
   width: 100%;
+  cursor: pointer;
 
   @media (min-width: $tabletWidth) {
     width: 282px;

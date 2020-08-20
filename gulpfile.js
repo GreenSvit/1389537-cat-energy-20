@@ -69,7 +69,7 @@ exports.webpImages = webpImages;
 // Sprite
 
 const sprite = () => {
-  return gulp.src('source/img/icon-*.svg').pipe(svgstore()).pipe(rename('sprite.svg')).pipe(gulp.dest('build/img'));
+  return gulp.src('source/img/sprite-*.svg').pipe(svgstore()).pipe(rename('sprite.svg')).pipe(gulp.dest('build/img'));
 };
 
 exports.sprite = sprite;
