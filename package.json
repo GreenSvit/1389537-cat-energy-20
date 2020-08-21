@@ -27,7 +27,11 @@
     "build": "gulp build",
     "start": "gulp start"
   },
-  "browserslist": [ "last 2 versions", "not dead", "not ie <= 11" ],
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
   "editorconfig-cli": [
     "*.json",
     "*.js",

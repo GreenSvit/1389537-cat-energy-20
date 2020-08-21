@@ -113,6 +113,7 @@
   text-transform: uppercase;
   margin-top: 13px;
   color: $deepGraphite;
+  position: relative;
 
   &:first-child {
     margin-top: 0;
@@ -247,22 +248,36 @@
   padding-left: 15px;
   color: $deepGraphite;
 
-  &--email {
-    background-image: url("../img/sprite-icon-mail.svg");
-    background-repeat: no-repeat;
-    background-size: 20px 14px;
-    background-position: right 15px bottom 50%;
-  }
-
-  &--tel {
-    background-image: url("../img/sprite-icon-phone.svg");
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    background-position: right 15px bottom 50%;
-  }
-
   @media (min-width: $tabletWidth) {
     height: 52px;
+  }
+
+  &:focus {
+    outline: 2px solid $deepGraphite;
+
+    & + .program-selection__icon {
+      fill: $basicGreen;
+    }
+  }
+
+  &:invalid {
+    outline: 2px solid $specialRed;
+
+    & + .program-selection__icon {
+      fill: $specialRed;
+    }
+  }
+}
+
+.program-selection__icon {
+  position: absolute;
+  fill: $black3;
+  &--mail {
+    right: 19px;
+  }
+
+  &--phone {
+    right: 17px;
   }
 }
 
@@ -280,6 +295,10 @@
   height: 150px;
   margin-top: 34px;
 
+  &:focus {
+    outline: 2px solid $deepGraphite;
+  }
+
   @media (min-width: $tabletWidth) {
     font-size: 20px;
     line-height: 30px;
@@ -289,7 +308,7 @@
   }
 
   @media (min-width: $desktopWidth) {
-    max-width: 100%;
+    min-width: 100%;
   }
 }
 
