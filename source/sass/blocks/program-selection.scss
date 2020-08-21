@@ -126,25 +126,26 @@
   }
 }
 
+.program-selection__comment {
+  @media (min-width: $tabletWidth) {
+    display: block;
+    margin-top: 65px;
+  }
+}
+
 .program-selection__legend {
   font-size: 24px;
   line-height: 26px;
+  width: 100%;
+  position: relative;
 
   @media (min-width: $tabletWidth) {
     font-size: 36px;
     line-height: 36px;
   }
 
-  &--comment {
-    @media (min-width: $tabletWidth) {
-      display: block;
-      padding-left: 40px;
-      margin-top: 65px;
-    }
-
-    @media (min-width: $desktopWidth) {
-      padding-left: 0;
-    }
+  @media (min-width: $desktopWidth) {
+    padding-left: 0;
   }
 }
 

@@ -1,5 +1,21 @@
 .additional-goods {
   padding-top: 28px;
+  position: relative;
+
+  &::before {
+    @include green-line;
+    left: 6vw;
+    width: 94vw;
+    top: 40px;
+    z-index: -2;
+
+    @media (min-width: $tabletWidth) {
+      left: 50%;
+      margin-left: -50vw;
+      width: 100vw;
+      top: 50px;
+    }
+  }
 }
 
 .additional-goods__list {
@@ -26,20 +42,8 @@
   margin: 0;
   padding: 0;
   font-weight: normal;
-  position: relative;
-
-  &::after {
-    @include green-line;
-    right: -22px;
-    top: 50%;
-    width: calc(94vw - 247px);
-    z-index: -2;
-
-    @media (min-width: $tabletWidth) {
-      width: 768px;
-      left: -30px;
-    }
-  }
+  background-color: $white;
+  width: 248px;
 
   @media (min-width: $tabletWidth) {
     font-size: 36px;
@@ -47,7 +51,6 @@
     padding-left: 37px;
     padding-right: 36px;
     width: 441px;
-    background-color: $white;
   }
 }
 
