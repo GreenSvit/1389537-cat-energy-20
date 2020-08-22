@@ -47,6 +47,11 @@
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
+
+  @media (min-width: $tabletWidth) {
+    min-height: 33px;
+    padding: 0;
+  }
 }
 
 .page-footer__dev-info {

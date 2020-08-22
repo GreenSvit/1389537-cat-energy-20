@@ -129,7 +129,9 @@
             class="program-selection__field program-selection__field--contacts"
           >
             <legend class="program-selection__legend">
-              Контактные данные (владельца кота)
+              <span class="programm-selection__legend-wrapper">
+                Контактные данные (владельца кота)
+              </span>
             </legend>
             <div class="program-selection__contacts-wrapper">
               <label class="program-selection__text-label">
@@ -169,7 +171,9 @@
             </div>
           </fieldset>
           <label class="program-selection__comment">
-            <span class="program-selection__legend">Комментарий</span>
+            <span class="program-selection__legend">
+              <span class="programm-selection__legend-wrapper">Комментарий</span>
+            </span>
             <textarea
               class="program-selection__textarea"
               name="comment"
@@ -181,7 +185,7 @@
           <fieldset
             class="program-selection__field program-selection__field--extra"
           >
-            <legend class="program-selection__legend">Дополнительно</legend>
+            <legend class="program-selection__legend"><span class="programm-selection__legend-wrapper">Дополнительно</span></legend>
             <div class="program-selection__extra-wrapper">
               <label class="program-selection__checkbox-label">
                 Сахарозаменитель
@@ -247,11 +251,9 @@
           </address>
         </div>
         <div class="contacts__map">
-          <iframe
+          <iframe class="contacts__map-frame"
             src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae4b156f7e20f2e5b065cfe67bb62551a21c035c17eec3e1301afb1caeeaf3a22&amp;source=constructor"
-            width="100%"
             height="400"
-            frameborder="0"
           ></iframe>
           <picture>
             <source
