@@ -38,8 +38,18 @@
 }
 
 .contrast-slider__status {
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
   @media (min-width: $tabletWidth) {
     border-bottom: 1px dotted $specialGrey2;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -64,27 +74,27 @@
     border-radius: 3px;
     background-color: $ligherGrey3;
   }
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    box-sizing: border-box;
-    width: 35px;
-    height: 6px;
-    top: 3px;
-    left: 6px;
-    border-radius: 3px;
-    background-color: $basicGreen;
+.contrast-slider__pin {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 35px;
+  height: 6px;
+  top: 3px;
+  left: 6px;
+  border-radius: 3px;
+  background-color: $basicGreen;
 
-    @media (min-width: $tabletWidth) {
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      border: 1px solid $lighterGrey2;
-      box-shadow: inset 0 0 0 12px $white, 0 1px 3px rgba(0, 0, 0, 0.16);
-      top: -14px;
-      left: 197px;
-      cursor: pointer;
-    }
+  @media (min-width: $tabletWidth) {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid $lighterGrey2;
+    box-shadow: inset 0 0 0 12px $white, 0 1px 3px rgba(0, 0, 0, 0.16);
+    top: -14px;
+    left: 197px;
+    cursor: pointer;
   }
 }

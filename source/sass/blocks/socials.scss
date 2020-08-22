@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  padding: 0;
 }
 
 .socials__item {
@@ -13,11 +12,13 @@
   height: 30px;
 
   &--vk {
+    margin-top: -4px;
     width: 22px;
     height: 12px;
 
     & .socials__icon {
       @media (min-width: $tabletWidth) {
+        margin-top: 0;
         width: 29px;
         height: 17px;
       }

@@ -60,11 +60,12 @@
 
   &--reason {
     margin-top: 26px;
+    color: $black3;
 
     @media (min-width: $tabletWidth) {
       margin-top: 71px;
       padding-top: 30px;
-      padding-left: 0;
+      padding-left: 27px;
       padding-right: 0;
       max-width: 628px;
       border: 1px solid $lightGrey;
@@ -112,6 +113,7 @@
   text-transform: uppercase;
   margin-top: 13px;
   color: $deepGraphite;
+  position: relative;
 
   &:first-child {
     margin-top: 0;
@@ -124,38 +126,76 @@
   }
 }
 
+.program-selection__comment {
+  @media (min-width: $tabletWidth) {
+    display: block;
+    margin-top: 65px;
+  }
+}
+
 .program-selection__legend {
+  display: block;
   font-size: 24px;
   line-height: 26px;
+  width: 100%;
+  position: relative;
+
+  &::after {
+    @include green-line;
+    left: 0;
+    width: 94vw;
+    top: 50%;
+    z-index: -2;
+
+    @media (min-width: $tabletWidth) {
+      top: 50%;
+      left: 50%;
+      margin-left: -50vw;
+      width: 100vw;
+    }
+  }
 
   @media (min-width: $tabletWidth) {
     font-size: 36px;
     line-height: 36px;
   }
 
-  &--comment {
-    @media (min-width: $tabletWidth) {
-      display: block;
-      padding-left: 40px;
-      margin-top: 65px;
-    }
+  @media (min-width: $desktopWidth) {
+    padding-left: 0;
+  }
+}
 
-    @media (min-width: $desktopWidth) {
-      padding-left: 0;
-    }
+.programm-selection__legend-wrapper {
+  display: inline-block;
+  max-width: 187px;
+  background-color: $white;
+  padding-right: 23px;
+
+  @media (min-width: $tabletWidth) {
+    max-width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: -40px;
   }
 }
 
 .program-selection__checkbox-label,
 .program-selection__reason-label {
+  cursor: pointer;
+  position: relative;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   margin-top: 25px;
-  padding-left: 36px;
+  padding-left: 45px;
 
   &:first-child {
     margin-top: 0;
+  }
+
+  &:hover .program-selection__checkbox,
+  &:hover .program-selection__radio-input {
+    border-color: $specialGrey3;
   }
 
   @media (min-width: $tabletWidth) {
@@ -165,15 +205,66 @@
   }
 }
 
+.program-selection__reason-label {
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .program-selection__checkbox-label {
+  &:active {
+    color: rgba($black, 0.3);
+
+    & .program-selection__checkbox {
+      border-color: rgba($specialGrey3, 0.3);
+    }
+  }
+
   @media (min-width: $tabletWidth) {
     margin: 0;
   }
 }
 
-.program-selection__checkbox,
-.program-selection__radio-input {
+.program-selection__input-default {
   display: none;
+}
+
+.program-selection__radio-input,
+.program-selection__checkbox {
+  position: absolute;
+  left: 0;
+  top: -6px;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $lighterGrey2;
+  background-color: $white;
+
+  @media (min-width: $tabletWidth) {
+    width: 40px;
+    height: 40px;
+    top: -5px;
+  }
+}
+
+.program-selection__radio-input {
+  border-radius: 50%;
+}
+
+.program-selection__input-default:checked + .program-selection__radio-input {
+  background-color: $basicGreen;
+  box-shadow: inset 0 0 0 7px $white;
+
+  @media (min-width: $tabletWidth) {
+    box-shadow: inset 0 0 0 10px $white;
+  }
+}
+
+.program-selection__input-default:checked + .program-selection__checkbox {
+  background-image: url("../img/icon-tick.svg");
+  background-size: 18px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .program-selection__text-input {
@@ -188,22 +279,37 @@
   padding-left: 15px;
   color: $deepGraphite;
 
-  &--email {
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-size: 20px 14px;
-    background-position: right 15px bottom 50%;
-  }
-
-  &--tel {
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    background-position: right 15px bottom 50%;
-  }
-
   @media (min-width: $tabletWidth) {
     height: 52px;
+  }
+
+  &:focus {
+    outline: 2px solid $deepGraphite;
+
+    & + .program-selection__icon {
+      fill: $basicGreen;
+    }
+  }
+
+  &:invalid {
+    outline: 2px solid $specialRed;
+
+    & + .program-selection__icon {
+      fill: $specialRed;
+    }
+  }
+}
+
+.program-selection__icon {
+  position: absolute;
+  fill: $black3;
+
+  &--mail {
+    right: 19px;
+  }
+
+  &--phone {
+    right: 17px;
   }
 }
 
@@ -221,6 +327,10 @@
   height: 150px;
   margin-top: 34px;
 
+  &:focus {
+    outline: 2px solid $deepGraphite;
+  }
+
   @media (min-width: $tabletWidth) {
     font-size: 20px;
     line-height: 30px;
@@ -230,7 +340,7 @@
   }
 
   @media (min-width: $desktopWidth) {
-    max-width: 100%;
+    min-width: 100%;
   }
 }
 
@@ -256,6 +366,7 @@
   font-family: $Oswald;
   margin-top: 17px;
   width: 100%;
+  cursor: pointer;
 
   @media (min-width: $tabletWidth) {
     width: 282px;

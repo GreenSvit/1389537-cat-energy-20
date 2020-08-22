@@ -58,7 +58,7 @@
 .main-header__wrapper {
   @media (max-width: $mobileWidth) {
     background: url("../img/index-background-mobile@1x.jpg"),
-      linear-gradient(to bottom, $headerGreen 305px, transparent 305px);
+      linear-gradient(to bottom, $headerGreen 305px, transparent 305px, transparent 100%);
     background-repeat: no-repeat;
     background-size: auto 305px;
     background-position: center 0;
