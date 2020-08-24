@@ -3,14 +3,14 @@
 }
 
 .catalog__title {
-  padding-top: 27px;
-  padding-bottom: 40px;
+  padding-top: 26px;
+  padding-bottom: 38px;
   position: relative;
 
   &::after {
     @include bottom-border;
 
-    top: 105px;
+    bottom: 0;
   }
 
   @media (min-width: $tabletWidth) {
@@ -40,7 +40,7 @@
 
   &::after {
     @include bottom-border;
-    top: 209px;
+    bottom: 0;
   }
 }
 

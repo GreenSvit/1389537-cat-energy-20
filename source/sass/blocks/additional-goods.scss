@@ -12,7 +12,7 @@
     @media (min-width: $tabletWidth) {
       left: 50%;
       margin-left: -50vw;
-      width: 100vw;
+      width: calc(100vw - 10px);
       top: 50px;
     }
   }

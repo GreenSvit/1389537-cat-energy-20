@@ -1,5 +1,13 @@
 .contacts {
   position: relative;
+
+  &--catalog {
+    background-color: $shadowWhite;
+
+    @media (min-width: $desktopWidth) {
+      background-color: $white;
+    }
+  }
 }
 
 .contacts__map {
@@ -17,7 +25,7 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  background-color: $white;
+  background-color: inherit;
   padding-top: 28px;
   padding-bottom: 22px;
 
@@ -39,10 +47,6 @@
     display: grid;
     grid-template-columns: 163px 155px;
     gap: 87px;
-  }
-
-  &--catalog {
-    background-color: $shadowWhite;
   }
 }
 
