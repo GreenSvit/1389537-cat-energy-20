@@ -1,15 +1,15 @@
 .contrast-slider {
   text-align: center;
 
-  @media (min-width: $tabletWidth) {
-    height: 650px;
-    // Временное решение до импорта графики
-  }
+  // @media (min-width: $tabletWidth) {
+  //   height: 650px;
+  //   // Временное решение до импорта графики
+  // }
 
-  @media (min-width: $desktopWidth) {
-    height: 589px;
-    // Временное решение до импорта графики
-  }
+  // @media (min-width: $desktopWidth) {
+  //   height: 589px;
+  //   // Временное решение до импорта графики
+  // }
 }
 
 .contrast-slider__list {
@@ -35,6 +35,11 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: $tabletWidth) {
+    margin-top: 29px;
+    margin-left: 80px;
+  }
 }
 
 .contrast-slider__status {
@@ -50,6 +55,15 @@
     border-bottom: 1px dotted $specialGrey2;
     font-size: 20px;
     line-height: 30px;
+
+    &:hover {
+      border-bottom-style: solid;
+    }
+
+    &:active {
+      border-bottom-color: transparent;
+      outline: none;
+    }
   }
 }
 
@@ -96,5 +110,13 @@
     top: -14px;
     left: 197px;
     cursor: pointer;
+
+    &:active {
+      border-color: $basicGreen;
+    }
   }
+}
+
+.contrast-slider__image {
+  margin-right: -38px;
 }

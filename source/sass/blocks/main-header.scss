@@ -19,9 +19,13 @@
     color: $black;
     text-align: left;
     width: 414px;
-    padding-left: 87px;
-    padding-top: 62px;
-    margin: 0;
+    margin-left: 87px;
+    margin-top: 73px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin-top: 111px;
+    margin-left: 80px;
   }
 }
 
@@ -36,12 +40,13 @@
     line-height: 20px;
     color: $black;
     text-align: left;
-    padding-left: 87px;
+    margin-left: 88px;
     margin-top: 41px;
   }
 
   @media (min-width: $desktopWidth) {
     margin-top: 40px;
+    margin-left: 80px;
   }
 }
 
@@ -50,15 +55,26 @@
   margin-left: auto;
   margin-right: auto;
 
+  @media (min-width: $tabletWidth) {
+    margin-top: 20px;
+    margin-left: -1px;
+    margin-bottom: 0;
+  }
+
   @media (min-width: $desktopWidth) {
-    margin-left: -54px;
+    margin-left: -46px;
   }
 }
 
 .main-header__wrapper {
   @media (max-width: $mobileWidth) {
     background: url("../img/index-background-mobile@1x.jpg"),
-      linear-gradient(to bottom, $headerGreen 305px, transparent 305px, transparent 100%);
+      linear-gradient(
+        to bottom,
+        $headerGreen 305px,
+        transparent 305px,
+        transparent 100%
+      );
     background-repeat: no-repeat;
     background-size: auto 305px;
     background-position: center 0;
@@ -81,11 +97,36 @@
 
   @media (min-width: $tabletWidth) {
     position: absolute;
-    top: 295px;
-    margin-left: 87px;
+    top: 182px;
+    margin-left: 82px;
+    margin-top: 48px;
     max-width: 244px;
     font-size: 20px;
     line-height: 32px;
-    padding: 0 14px;
+    display: block;
+    box-sizing: border-box;
+    width: 280px;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    background-color: $basicGreen;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+
+    @media (min-width: $tabletWidth) {
+      padding-bottom: 11px;
+      padding-top: 11px;
+    }
+
+    &:hover {
+      background-color: $basicGreen2;
+    }
+
+    &:active {
+      background-color: $basicGreen2;
+      color: rgba($white, 0.3);
+    }
   }
 }

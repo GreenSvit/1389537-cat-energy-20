@@ -27,4 +27,9 @@
 
 .dev-info__logo {
   fill: $darkGrey;
+
+  @media (min-width: $tabletWidth) {
+    margin-left: 10px;
+    margin-top: 4px;
+  }
 }

@@ -39,6 +39,7 @@
   @media (min-width: $tabletWidth) {
     grid-template-columns: 1fr 1fr;
     gap: 134px 182px;
+    margin-top: 72px;
   }
 
   @media (min-width: $desktopWidth) {

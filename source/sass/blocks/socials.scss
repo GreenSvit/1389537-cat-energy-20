@@ -8,13 +8,9 @@
 .socials__item {
   display: block;
   box-sizing: border-box;
-  width: 30px;
-  height: 30px;
 
   &--vk {
     margin-top: -4px;
-    width: 22px;
-    height: 12px;
 
     & .socials__icon {
       @media (min-width: $tabletWidth) {
@@ -22,17 +18,23 @@
         width: 29px;
         height: 17px;
       }
+
+      @media (min-width: $desktopWidth) {
+        margin-top: 5px;
+        margin-left: 2px;
+      }
     }
   }
 
   &--inst {
-    width: 16px;
-    height: 16px;
-
     & .socials__icon {
       @media (min-width: $tabletWidth) {
         width: 23px;
         height: 23px;
+      }
+
+      @media (min-width: $desktopWidth) {
+        margin-top: 3px;
       }
     }
   }
@@ -43,8 +45,13 @@
 
     & .socials__icon {
       @media (min-width: $tabletWidth) {
-        width: 13px;
+        width: auto;
         height: 27px;
+      }
+
+      @media (min-width: $desktopWidth) {
+        margin-top: -5px;
+        margin-left: -9px;
       }
     }
   }

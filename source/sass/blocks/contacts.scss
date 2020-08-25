@@ -25,7 +25,7 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  background-color: inherit;
+  background-color: white;
   padding-top: 28px;
   padding-bottom: 22px;
 
@@ -43,7 +43,7 @@
     padding-left: 76px;
     padding-top: 66px;
     padding-right: 89px;
-    padding-bottom: 51px;
+    padding-bottom: 58px;
     display: grid;
     grid-template-columns: 163px 155px;
     gap: 87px;
@@ -59,7 +59,7 @@
 
   @media (min-width: $tabletWidth) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 25px;
   }
 }
 
@@ -70,9 +70,23 @@
   color: $deepGraphite;
   font-style: normal;
   flex-basis: 140px;
+
+  @media (min-width: $tabletWidth) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin-top: -3px;
+  }
 }
 
 .contacts__map-frame {
   width: 100%;
-  frameborder: 0;
+}
+
+.contacts__empty-line {
+  display: none;
+  @media (min-width: $tabletWidth) {
+    display: block;
+  }
 }
