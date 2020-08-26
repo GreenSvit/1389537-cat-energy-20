@@ -40,9 +40,6 @@
   }
 
   &--fb {
-    width: 10px;
-    height: 18px;
-
     & .socials__icon {
       @media (min-width: $tabletWidth) {
         width: auto;

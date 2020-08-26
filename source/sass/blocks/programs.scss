@@ -19,9 +19,9 @@
 .programs__item {
   box-sizing: border-box;
   padding-left: 20px;
-  padding-top: 21px;
+  padding-top: 30px;
   padding-right: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 20px;
   background-color: $shadowWhite;
 
   @media (min-width: $tabletWidth) {
@@ -42,27 +42,28 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: normal;
-  padding-left: 71px;
+  padding-left: 72px;
   position: relative;
   overflow: visible;
 
   &::before {
     content: "";
-    top: -5px;
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   &--loss::before {
-    left: 2px;
+    left: 3px;
+    top: -9px;
     width: 50px;
     height: 53px;
     background-image: url("../img/icon-cat-slim-circle.svg");
   }
 
   &--set::before {
-    left: -7px;
+    top: -6px;
+    left: -6px;
     width: 67px;
     height: 50px;
     background-image: url("../img/icon-cat-pro-circle.svg");
@@ -116,8 +117,9 @@
   font-family: $Arial;
   color: $deepGraphite;
   position: relative;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   border-bottom: solid 1px $borderGrey;
+  margin-bottom: 0;
 
   .programs__title--set + & {
     @media (min-width: $tabletWidth) {
@@ -142,6 +144,7 @@
 }
 
 .programs__link {
+  display: inline-block;
   margin-top: 19px;
   text-decoration: none;
   font-size: 16px;
@@ -167,8 +170,13 @@
     background-image: url("../img/icon-right-arrow-long.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    top: 10px;
-    right: -51px;
+    top: 2px;
+    right: -40px;
+
+    @media (min-width: $tabletWidth) {
+      top: 10px;
+      right: -51px;
+    }
   }
 
   &:hover::after {

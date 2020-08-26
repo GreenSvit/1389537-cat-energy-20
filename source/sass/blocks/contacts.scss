@@ -30,10 +30,10 @@
   padding-bottom: 22px;
 
   @media (min-width: $tabletWidth) {
-    padding-left: 41px;
-    padding-right: 41px;
-    padding-top: 62px;
-    padding-bottom: 52px;
+    padding-left: 71px;
+    padding-right: 72px;
+    padding-top: 64px;
+    padding-bottom: 57px;
   }
 
   @media (min-width: $desktopWidth) {
@@ -60,6 +60,13 @@
   @media (min-width: $tabletWidth) {
     font-size: 20px;
     line-height: 25px;
+    flex-basis: 180px;
+    margin-top: 2px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    flex: 160px;
+    text-align: left;
   }
 }
 
@@ -73,6 +80,8 @@
 
   @media (min-width: $tabletWidth) {
     font-size: 16px;
+    flex-basis: 160px;
+    text-align: end;
   }
 
   @media (min-width: $desktopWidth) {

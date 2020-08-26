@@ -38,7 +38,7 @@
 
   @media (min-width: $tabletWidth) {
     grid-template-columns: 1fr 1fr;
-    gap: 134px 182px;
+    gap: 134px 59px;
     margin-top: 72px;
   }
 
@@ -51,6 +51,7 @@
 .instructions__desc {
   font-family: $Arial;
   margin: 0;
+  margin-top: 3px;
   padding: 0;
 
   @media (min-width: $tabletWidth) {
@@ -148,5 +149,11 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/advantage-clock@2x.png");
     }
+  }
+}
+
+.instructions__break {
+  @media (max-width: $mobileWidth) {
+    display: none;
   }
 }

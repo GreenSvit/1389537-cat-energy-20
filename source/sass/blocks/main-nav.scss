@@ -1,3 +1,7 @@
 .main-nav {
   width: 100%;
+
+  @media (min-width: $desktopWidth) {
+    width: 478px;
+  }
 }
