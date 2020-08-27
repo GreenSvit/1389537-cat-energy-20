@@ -27,7 +27,7 @@
   justify-content: space-between;
   background-color: white;
   padding-top: 28px;
-  padding-bottom: 22px;
+  padding-bottom: 26px;
 
   @media (min-width: $tabletWidth) {
     padding-left: 71px;
@@ -52,7 +52,7 @@
 
 .contacts__title {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
   color: $black2;
   flex-basis: 140px;

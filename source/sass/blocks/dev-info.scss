@@ -18,6 +18,10 @@
   line-height: 18px;
   color: $deepGraphite;
   text-decoration: none;
+
+  @media (max-width: $mobileWidth) {
+    margin-top: -3px;
+  }
 }
 
 .dev-info__link {
@@ -27,6 +31,7 @@
 
 .dev-info__logo {
   fill: $darkGrey;
+  margin-left: 9px;
 
   @media (min-width: $tabletWidth) {
     margin-left: 10px;

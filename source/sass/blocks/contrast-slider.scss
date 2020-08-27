@@ -1,15 +1,5 @@
 .contrast-slider {
   text-align: center;
-
-  // @media (min-width: $tabletWidth) {
-  //   height: 650px;
-  //   // Временное решение до импорта графики
-  // }
-
-  // @media (min-width: $desktopWidth) {
-  //   height: 589px;
-  //   // Временное решение до импорта графики
-  // }
 }
 
 .contrast-slider__list {
@@ -21,11 +11,17 @@
 
   &--current {
     display: block;
+
+    @media (max-width: $mobileWidth) {
+      margin-left: -19px;
+      margin-top: -6px;
+    }
   }
 }
 
 .contrast-slider__indicator {
-  margin-top: 27px;
+  margin-top: 29px;
+  margin-left: 5px;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -47,8 +43,8 @@
 .contrast-slider__status {
   font-family: inherit;
   text-transform: uppercase;
-  font-size: inherit;
-  line-height: inherit;
+  font-size: 16px;
+  line-height: 20px;
   border: none;
   padding: 0;
   cursor: pointer;
@@ -78,8 +74,8 @@
   border-radius: 8px;
   background-color: $white;
   position: relative;
-  margin-left: 12px;
-  margin-right: 13px;
+  margin-left: 18px;
+  margin-right: 17px;
 
   @media (min-width: $tabletWidth) {
     margin-left: 24px;
@@ -117,8 +113,4 @@
       border-color: $basicGreen;
     }
   }
-}
-
-.contrast-slider__image {
-  margin-right: -38px;
 }
