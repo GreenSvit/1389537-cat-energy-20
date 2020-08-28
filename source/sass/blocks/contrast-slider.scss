@@ -16,6 +16,10 @@
       margin-left: -19px;
       margin-top: -6px;
     }
+
+    @media (min-width: $tabletWidth) {
+      margin-left: 38px;
+    }
   }
 }
 

@@ -60,6 +60,10 @@
       z-index: 5;
       left: 0;
       bottom: -9px;
+
+      @media (min-width: $tabletWidth) {
+        bottom: -10px;
+      }
     }
 
     @media (min-width: $desktopWidth) {
