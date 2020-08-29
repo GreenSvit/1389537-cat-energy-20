@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktopWidth) {
-    margin-top: 136px;
+    margin-top: 132px;
   }
 }
 
@@ -26,22 +26,10 @@
   background-color: $lightGrey;
 
   @media (min-width: $tabletWidth) {
-    background: linear-gradient(
-      to bottom,
-      $white,
-      $white 619px,
-      $lightGrey 619px,
-      $lightGrey
-    );
+    background: linear-gradient(to bottom, $white, $white 619px, $lightGrey 619px, $lightGrey);
   }
 
   @media (min-width: $desktopWidth) {
-    background: linear-gradient(
-      to bottom,
-      $white,
-      $white 194px,
-      $lightGrey 194px,
-      $lightGrey
-    );
+    background: linear-gradient(to bottom, $white, $white 194px, $lightGrey 194px, $lightGrey);
   }
 }
