@@ -10,7 +10,7 @@
   @media (min-width: $desktopWidth) {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 67px;
+    padding-bottom: 69px;
     padding-top: 26px;
   }
 }
@@ -19,7 +19,7 @@
   width: 100%;
 
   @media (min-width: $desktopWidth) {
-    padding-top: 31px;
+    padding-top: 30px;
   }
 }
 
@@ -129,7 +129,7 @@
   @media (min-width: $desktopWidth) {
     max-width: 327px;
     text-align: left;
-    margin-top: 60px;
+    margin-top: 55px;
     display: flex;
     justify-content: space-between;
   }
@@ -161,5 +161,6 @@
 
   @media (min-width: $desktopWidth) {
     margin-top: -20px;
+    margin-right: -40px;
   }
 }

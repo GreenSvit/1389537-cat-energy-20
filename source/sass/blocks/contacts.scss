@@ -67,6 +67,7 @@
   @media (min-width: $desktopWidth) {
     flex: 160px;
     text-align: left;
+    margin-top: 0;
   }
 }
 
@@ -86,6 +87,7 @@
 
   @media (min-width: $desktopWidth) {
     margin-top: -3px;
+    text-align: start;
   }
 }
 

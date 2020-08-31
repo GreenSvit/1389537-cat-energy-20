@@ -20,6 +20,11 @@
     @media (min-width: $tabletWidth) {
       margin-left: 38px;
     }
+
+    @media (min-width: $desktopWidth) {
+      margin-left: -30px;
+      margin-top: -3px;
+    }
   }
 }
 
@@ -39,8 +44,8 @@
   }
 
   @media (min-width: $desktopWidth) {
-    margin-top: 29px;
-    margin-left: 80px;
+    margin-top: 31px;
+    margin-left: 9px;
   }
 }
 
