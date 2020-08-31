@@ -52,7 +52,7 @@
 
   &::after {
     @include bottom-border;
-    top: 209px;
+    bottom: -86px;
   }
 
   @media (min-width: $tabletWidth) {

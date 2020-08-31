@@ -6,7 +6,7 @@
     @include green-line;
     left: 6vw;
     width: 94vw;
-    top: 40px;
+    top: 43px;
     z-index: -2;
 
     @media (min-width: $tabletWidth) {
@@ -22,7 +22,7 @@
   box-sizing: border-box;
 
   @include list-normalize;
-  margin-top: 35px;
+  margin-top: 34px;
 
   @media (min-width: $tabletWidth) {
     border-left: 1px solid $lighterGrey2;
@@ -58,7 +58,7 @@
   box-sizing: border-box;
   padding-top: 13px;
   border-top: solid 1px $lighterGrey2;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
 
   &:last-child {
     border-bottom: solid 1px $lighterGrey2;
