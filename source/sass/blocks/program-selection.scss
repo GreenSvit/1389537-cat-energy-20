@@ -1,5 +1,5 @@
 .program-selection {
-  padding-top: 27px;
+  padding-top: 25px;
   padding-bottom: 32px;
 }
 
@@ -9,7 +9,7 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
-  margin-top: 37px;
+  margin-top: 35px;
 
   @media (min-width: $tabletWidth) {
     font-size: 20px;
@@ -61,6 +61,7 @@
   &--reason {
     margin-top: 26px;
     color: $black3;
+    padding-bottom: 27px;
 
     @media (min-width: $tabletWidth) {
       margin-top: 71px;
@@ -80,6 +81,7 @@
 
   &--contacts {
     margin-top: 26px;
+    padding-bottom: 27px;
 
     @media (min-width: $tabletWidth) {
       margin-top: 71px;
@@ -92,7 +94,7 @@
   }
 
   &--extra {
-    margin-top: 26px;
+    margin-top: 24px;
 
     @media (min-width: $tabletWidth) {
       margin-top: 65px;
@@ -111,7 +113,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-top: 13px;
+  margin-top: 14px;
   color: $deepGraphite;
   position: relative;
 
@@ -145,7 +147,7 @@
 
     left: 0;
     width: 94vw;
-    top: 50%;
+    top: 16px;
     z-index: -2;
 
     @media (min-width: $tabletWidth) {
@@ -274,7 +276,7 @@
   text-transform: uppercase;
   box-sizing: border-box;
   height: 45px;
-  margin-left: 10px;
+  margin-left: 15px;
   border: 1px solid $lightGrey;
   border-radius: 0;
   padding-left: 15px;
@@ -306,11 +308,11 @@
   fill: $black3;
 
   &--mail {
-    right: 19px;
+    right: 16px;
   }
 
   &--phone {
-    right: 17px;
+    right: 14px;
   }
 }
 
@@ -319,7 +321,7 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
-  padding: 15px 13px 12px;
+  padding: 13px 13px 12px;
   box-sizing: border-box;
   width: 100%;
   border: 1px solid $lightGrey;
@@ -365,9 +367,13 @@
 
 .program-selection__submit {
   font-family: $Oswald;
-  margin-top: 17px;
+  margin-top: 14px;
   width: 100%;
   cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   @media (min-width: $tabletWidth) {
     width: 282px;
@@ -383,7 +389,7 @@
 
 .program-selection__extra-wrapper {
   display: grid;
-  margin-top: 39px;
+  margin-top: 40px;
 
   @media (min-width: $tabletWidth) {
     grid-template-columns: 221px 221px;
@@ -437,4 +443,8 @@
   @media (min-width: $desktopWidth) {
     margin-top: 0;
   }
+}
+
+.program-selection__contacts-wrapper .program-selection__text-input {
+  margin-left: 12px;
 }
