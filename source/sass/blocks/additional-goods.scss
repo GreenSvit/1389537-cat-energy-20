@@ -2,6 +2,14 @@
   padding-top: 28px;
   position: relative;
 
+  @media (min-width: $tabletWidth) {
+    padding-top: 43px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding-top: 50px;
+  }
+
   &::before {
     @include green-line;
     left: 6vw;
@@ -13,7 +21,11 @@
       left: 50%;
       margin-left: -50vw;
       width: calc(100vw - 10px);
-      top: 50px;
+      top: 65px;
+    }
+
+    @media (min-width: $desktopWidth) {
+      top: 73px;
     }
   }
 }
@@ -27,6 +39,7 @@
   @media (min-width: $tabletWidth) {
     border-left: 1px solid $lighterGrey2;
     border-right: 1px solid $lighterGrey2;
+    margin-top: 80px;
   }
 
   @media (min-width: $desktopWidth) {
@@ -51,6 +64,13 @@
     padding-left: 37px;
     padding-right: 36px;
     width: 441px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 0;
+    width: 413px;
   }
 }
 
@@ -82,7 +102,7 @@
     padding-left: 0;
     padding-right: 0;
     padding-top: 15px;
-    padding-bottom: 17px;
+    padding-bottom: 16px;
   }
 }
 
@@ -97,6 +117,10 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktopWidth) {
+    margin-left: 1px;
+  }
 }
 
 .additional-goods__numbers {
@@ -110,7 +134,12 @@
   @media (min-width: $tabletWidth) {
     font-size: 16px;
     line-height: 20px;
-    margin-top: 0;
+    margin-top: 3px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin-top: 7px;
+    margin-left: 1px;
   }
 }
 
@@ -122,6 +151,10 @@
   @media (min-width: $tabletWidth) {
     min-width: 44px;
   }
+
+  @media (min-width: $desktopWidth) {
+    margin-right: -3px;
+  }
 }
 
 .additional-goods__order {
@@ -129,16 +162,17 @@
   margin-top: 15px;
 
   @media (min-width: $tabletWidth) {
-    margin-top: 25px;
+    margin-top: 23px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktopWidth) {
     width: 244px;
     margin-top: 0;
-    font-size: 16px;
-    line-height: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-left: 1px;
   }
 }
 
@@ -146,8 +180,8 @@
   @media (min-width: $desktopWidth) {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 80px;
-    margin-top: 81px;
+    gap: 81px;
+    margin-top: 80px;
     margin-bottom: 86px;
   }
 }

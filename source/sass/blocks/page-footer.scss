@@ -4,12 +4,13 @@
   background-color: $shadowWhite;
 
   @media (min-width: $tabletWidth) {
-    padding-bottom: 56px;
+    padding-bottom: 61px;
     padding-top: 56px;
   }
 
   @media (min-width: $desktopWidth) {
     padding-top: 55px;
+    padding-bottom: 54px;
   }
 }
 
@@ -50,7 +51,7 @@
   padding-left: 0;
   padding-top: 22px;
   padding-bottom: 18px;
-  width: 123px;
+  width: 127px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;

@@ -25,7 +25,6 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  background-color: white;
   padding-top: 28px;
   padding-bottom: 26px;
 
@@ -47,6 +46,7 @@
     display: grid;
     grid-template-columns: 163px 155px;
     gap: 87px;
+    background-color: $white;
   }
 }
 

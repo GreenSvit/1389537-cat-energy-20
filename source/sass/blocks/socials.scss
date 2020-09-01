@@ -17,6 +17,7 @@
         margin-top: 0;
         width: 29px;
         height: 17px;
+        margin-left: -3px;
       }
 
       @media (min-width: $desktopWidth) {
@@ -47,6 +48,7 @@
       @media (min-width: $tabletWidth) {
         width: auto;
         height: 27px;
+        margin-top: -2px;
       }
 
       @media (min-width: $desktopWidth) {
