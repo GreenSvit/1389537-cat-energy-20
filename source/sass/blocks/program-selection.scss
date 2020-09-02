@@ -1,6 +1,11 @@
 .program-selection {
   padding-top: 25px;
   padding-bottom: 32px;
+
+  @media (min-width: $tabletWidth) {
+    padding-top: 64px;
+    padding-bottom: 72px;
+  }
 }
 
 .program-selection__call {
@@ -64,8 +69,9 @@
     padding-bottom: 27px;
 
     @media (min-width: $tabletWidth) {
-      margin-top: 71px;
-      padding-top: 30px;
+      margin-top: 48px;
+      padding-top: 29px;
+      padding-bottom: 29px;
       padding-left: 27px;
       padding-right: 0;
       max-width: 628px;
@@ -84,7 +90,7 @@
     padding-bottom: 27px;
 
     @media (min-width: $tabletWidth) {
-      margin-top: 71px;
+      margin-top: 76px;
       padding-bottom: 0;
     }
 
@@ -97,7 +103,7 @@
     margin-top: 24px;
 
     @media (min-width: $tabletWidth) {
-      margin-top: 65px;
+      margin-top: 38px;
     }
 
     &::after {
@@ -131,7 +137,7 @@
 .program-selection__comment {
   @media (min-width: $tabletWidth) {
     display: block;
-    margin-top: 65px;
+    margin-top: 66px;
   }
 }
 
@@ -151,7 +157,7 @@
     z-index: -2;
 
     @media (min-width: $tabletWidth) {
-      top: 50%;
+      top: 58%;
       left: 50%;
       margin-left: -50vw;
       width: calc(100vw - 10px);
@@ -205,6 +211,7 @@
     font-size: 20px;
     line-height: 30px;
     padding-left: 60px;
+    margin-top: 23px;
   }
 }
 
@@ -284,6 +291,7 @@
 
   @media (min-width: $tabletWidth) {
     height: 52px;
+    margin-left: 18px;
   }
 
   &:focus {
@@ -338,8 +346,9 @@
     font-size: 20px;
     line-height: 30px;
     max-width: 630px;
-    margin-top: 76px;
+    margin-top: 75px;
     height: 174px;
+    padding: 10px 17px;
   }
 
   @media (min-width: $desktopWidth) {
@@ -356,7 +365,7 @@
 
   @media (min-width: $tabletWidth) {
     margin-left: 61px;
-    margin-top: 0;
+    margin-top: -2px;
     font-size: 16px;
   }
 
@@ -380,6 +389,8 @@
     font-size: 20px;
     line-height: 26px;
     margin-top: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: $desktopWidth) {
@@ -393,8 +404,8 @@
 
   @media (min-width: $tabletWidth) {
     grid-template-columns: 221px 221px;
-    gap: 32px 123px;
-    margin-top: 57px;
+    gap: 42px 123px;
+    margin-top: 62px;
   }
 
   @media (min-width: $desktopWidth) {
@@ -406,7 +417,7 @@
   margin-top: 32px;
 
   @media (min-width: $tabletWidth) {
-    margin-top: 76px;
+    margin-top: 75px;
   }
 
   @media (min-width: $desktopWidth) {
@@ -430,7 +441,7 @@
     padding-right: 40px;
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 35px;
   }
 
   @media (min-width: $desktopWidth) {
@@ -447,4 +458,8 @@
 
 .program-selection__contacts-wrapper .program-selection__text-input {
   margin-left: 12px;
+
+  @media (min-width: $tabletWidth) {
+    margin-left: 16px;
+  }
 }
