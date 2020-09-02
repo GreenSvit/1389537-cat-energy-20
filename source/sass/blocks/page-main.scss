@@ -26,22 +26,10 @@
   background-color: $lightGrey;
 
   @media (min-width: $tabletWidth) {
-    background: linear-gradient(
-      to bottom,
-      $white,
-      $white 619px,
-      $lightGrey 619px,
-      $lightGrey
-    );
+    background: linear-gradient(to bottom, $white, $white 619px, $lightGrey 619px, $lightGrey);
   }
 
   @media (min-width: $desktopWidth) {
-    background: linear-gradient(
-      to bottom,
-      $white,
-      $white 192px,
-      $lightGrey 192px,
-      $lightGrey
-    );
+    background: linear-gradient(to bottom, $white, $white 192px, $lightGrey 192px, $lightGrey);
   }
 }

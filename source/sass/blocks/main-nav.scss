@@ -5,3 +5,9 @@
     width: 478px;
   }
 }
+
+.main-nav--closed {
+  @media (max-width: $mobileWidth) {
+    display: none;
+  }
+}

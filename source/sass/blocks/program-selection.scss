@@ -6,6 +6,11 @@
     padding-top: 64px;
     padding-bottom: 72px;
   }
+
+  @media (min-width: $desktopWidth) {
+    padding-top: 60px;
+    padding-bottom: 82px;
+  }
 }
 
 .program-selection__call {
@@ -26,6 +31,7 @@
 
   @media (min-width: $desktopWidth) {
     padding-left: 0;
+    margin-top: 56px;
   }
 }
 
@@ -94,6 +100,10 @@
       padding-bottom: 0;
     }
 
+    @media (min-width: $desktopWidth) {
+      margin-top: 70px;
+    }
+
     &::after {
       display: none;
     }
@@ -104,6 +114,10 @@
 
     @media (min-width: $tabletWidth) {
       margin-top: 38px;
+    }
+
+    @media (min-width: $desktopWidth) {
+      margin-top: 65px;
     }
 
     &::after {
@@ -138,6 +152,10 @@
   @media (min-width: $tabletWidth) {
     display: block;
     margin-top: 66px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin-top: 68px;
   }
 }
 
@@ -212,6 +230,10 @@
     line-height: 30px;
     padding-left: 60px;
     margin-top: 23px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding-left: 59px;
   }
 }
 
@@ -309,6 +331,10 @@
       fill: $specialRed;
     }
   }
+
+  @media (min-width: $desktopWidth) {
+    padding-left: 17px;
+  }
 }
 
 .program-selection__icon {
@@ -371,6 +397,7 @@
 
   @media (min-width: $desktopWidth) {
     margin-left: 81px;
+    margin-top: 0;
   }
 }
 
@@ -410,6 +437,8 @@
 
   @media (min-width: $desktopWidth) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+    margin-top: 61px;
   }
 }
 
@@ -446,7 +475,8 @@
 
   @media (min-width: $desktopWidth) {
     padding: 0;
-    margin-top: 61px;
+    margin-top: 66px;
+    margin-left: 1px;
   }
 }
 
