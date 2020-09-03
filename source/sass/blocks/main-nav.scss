@@ -1,8 +1,12 @@
 .main-nav {
-  width: 100%;
+  max-height: 200px;
+  transition-property: max-height;
+  transition-duration: .5s;
+}
 
-  @media (min-width: $desktopWidth) {
-    width: 478px;
+.main-nav--closed-animation {
+  @media (max-width: $mobileWidth) {
+    max-height: 0;
   }
 }
 

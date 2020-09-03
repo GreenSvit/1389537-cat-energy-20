@@ -44,8 +44,8 @@
   box-sizing: border-box;
   min-height: 62px;
   padding-right: 23px;
-    padding-top: 12px;
-    padding-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 15px;
 
   @media (max-width: $mobileWidth) {
     border-bottom: solid 1px $lighterGrey;
