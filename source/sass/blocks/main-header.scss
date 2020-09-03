@@ -3,7 +3,7 @@
 }
 
 .main-header__title {
-  margin-top: 25px;
+  margin-top: 2px;
   font-size: 36px;
   font-weight: normal;
   line-height: 36px;
@@ -19,16 +19,20 @@
     color: $black;
     text-align: left;
     width: 414px;
-    padding-left: 87px;
-    padding-top: 62px;
-    margin: 0;
+    margin-left: 87px;
+    margin-top: 63px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin-top: 96px;
+    margin-left: 80px;
   }
 }
 
 .main-header__subtitle {
   display: block;
   color: $white;
-  margin-top: 25px;
+  margin-top: 23px;
   text-transform: uppercase;
 
   @media (min-width: $tabletWidth) {
@@ -36,22 +40,30 @@
     line-height: 20px;
     color: $black;
     text-align: left;
-    padding-left: 87px;
+    margin-left: 88px;
     margin-top: 41px;
   }
 
   @media (min-width: $desktopWidth) {
     margin-top: 40px;
+    margin-left: 80px;
   }
 }
 
 .main-header__pic {
-  margin-top: 29px;
+  margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
+
+  @media (min-width: $tabletWidth) {
+    margin-top: 20px;
+    margin-left: -1px;
+  }
 
   @media (min-width: $desktopWidth) {
-    margin-left: -54px;
+    margin-left: -46px;
+    margin-top: 14px;
   }
 }
 
@@ -76,16 +88,64 @@
 }
 
 .main-header__btn {
+  margin-top: 1px;
   margin-left: auto;
   margin-right: auto;
+  font-size: inherit;
+  line-height: inherit;
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  padding-bottom: 11px;
+  padding-top: 10px;
+  background-color: $basicGreen;
+  color: $white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+
+  &:hover {
+    background-color: $basicGreen2;
+  }
+
+  &:active {
+    background-color: $basicGreen2;
+    color: rgba($white, 0.3);
+  }
 
   @media (min-width: $tabletWidth) {
     position: absolute;
-    top: 295px;
-    margin-left: 87px;
+    top: 182px;
+    margin-left: 82px;
+    margin-top: 48px;
     max-width: 244px;
     font-size: 20px;
     line-height: 32px;
-    padding: 0 14px;
+    display: block;
+    box-sizing: border-box;
+    width: 280px;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    background-color: $basicGreen;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+
+    &:hover {
+      background-color: $basicGreen2;
+    }
+
+    &:active {
+      background-color: $basicGreen2;
+      color: rgba($white, 0.3);
+    }
+  }
+
+  @media (min-width: $desktopWidth) {
+    top: 280px;
+    margin-left: 80px;
   }
 }

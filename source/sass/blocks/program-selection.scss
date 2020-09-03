@@ -1,6 +1,16 @@
 .program-selection {
-  padding-top: 27px;
+  padding-top: 25px;
   padding-bottom: 32px;
+
+  @media (min-width: $tabletWidth) {
+    padding-top: 64px;
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding-top: 60px;
+    padding-bottom: 82px;
+  }
 }
 
 .program-selection__call {
@@ -9,7 +19,7 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
-  margin-top: 37px;
+  margin-top: 35px;
 
   @media (min-width: $tabletWidth) {
     font-size: 20px;
@@ -21,6 +31,7 @@
 
   @media (min-width: $desktopWidth) {
     padding-left: 0;
+    margin-top: 56px;
   }
 }
 
@@ -61,10 +72,12 @@
   &--reason {
     margin-top: 26px;
     color: $black3;
+    padding-bottom: 27px;
 
     @media (min-width: $tabletWidth) {
-      margin-top: 71px;
-      padding-top: 30px;
+      margin-top: 48px;
+      padding-top: 29px;
+      padding-bottom: 29px;
       padding-left: 27px;
       padding-right: 0;
       max-width: 628px;
@@ -80,10 +93,15 @@
 
   &--contacts {
     margin-top: 26px;
+    padding-bottom: 27px;
 
     @media (min-width: $tabletWidth) {
-      margin-top: 71px;
+      margin-top: 76px;
       padding-bottom: 0;
+    }
+
+    @media (min-width: $desktopWidth) {
+      margin-top: 70px;
     }
 
     &::after {
@@ -92,9 +110,13 @@
   }
 
   &--extra {
-    margin-top: 26px;
+    margin-top: 24px;
 
     @media (min-width: $tabletWidth) {
+      margin-top: 38px;
+    }
+
+    @media (min-width: $desktopWidth) {
       margin-top: 65px;
     }
 
@@ -111,7 +133,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-top: 13px;
+  margin-top: 14px;
   color: $deepGraphite;
   position: relative;
 
@@ -129,7 +151,11 @@
 .program-selection__comment {
   @media (min-width: $tabletWidth) {
     display: block;
-    margin-top: 65px;
+    margin-top: 66px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin-top: 68px;
   }
 }
 
@@ -142,16 +168,17 @@
 
   &::after {
     @include green-line;
+
     left: 0;
     width: 94vw;
-    top: 50%;
+    top: 16px;
     z-index: -2;
 
     @media (min-width: $tabletWidth) {
-      top: 50%;
+      top: 58%;
       left: 50%;
       margin-left: -50vw;
-      width: 100vw;
+      width: calc(100vw - 10px);
     }
   }
 
@@ -165,7 +192,7 @@
   }
 }
 
-.programm-selection__legend-wrapper {
+.program-selection__legend-wrapper {
   display: inline-block;
   max-width: 187px;
   background-color: $white;
@@ -202,6 +229,11 @@
     font-size: 20px;
     line-height: 30px;
     padding-left: 60px;
+    margin-top: 23px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding-left: 59px;
   }
 }
 
@@ -273,7 +305,7 @@
   text-transform: uppercase;
   box-sizing: border-box;
   height: 45px;
-  margin-left: 10px;
+  margin-left: 15px;
   border: 1px solid $lightGrey;
   border-radius: 0;
   padding-left: 15px;
@@ -281,6 +313,7 @@
 
   @media (min-width: $tabletWidth) {
     height: 52px;
+    margin-left: 18px;
   }
 
   &:focus {
@@ -298,6 +331,10 @@
       fill: $specialRed;
     }
   }
+
+  @media (min-width: $desktopWidth) {
+    padding-left: 17px;
+  }
 }
 
 .program-selection__icon {
@@ -305,11 +342,11 @@
   fill: $black3;
 
   &--mail {
-    right: 19px;
+    right: 16px;
   }
 
   &--phone {
-    right: 17px;
+    right: 14px;
   }
 }
 
@@ -318,7 +355,7 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
-  padding: 15px 13px 12px;
+  padding: 13px 13px 12px;
   box-sizing: border-box;
   width: 100%;
   border: 1px solid $lightGrey;
@@ -335,8 +372,9 @@
     font-size: 20px;
     line-height: 30px;
     max-width: 630px;
-    margin-top: 76px;
+    margin-top: 75px;
     height: 174px;
+    padding: 10px 17px;
   }
 
   @media (min-width: $desktopWidth) {
@@ -353,26 +391,33 @@
 
   @media (min-width: $tabletWidth) {
     margin-left: 61px;
-    margin-top: 0;
+    margin-top: -2px;
     font-size: 16px;
   }
 
   @media (min-width: $desktopWidth) {
     margin-left: 81px;
+    margin-top: 0;
   }
 }
 
 .program-selection__submit {
   font-family: $Oswald;
-  margin-top: 17px;
+  margin-top: 14px;
   width: 100%;
   cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   @media (min-width: $tabletWidth) {
     width: 282px;
     font-size: 20px;
     line-height: 26px;
     margin-top: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: $desktopWidth) {
@@ -382,16 +427,18 @@
 
 .program-selection__extra-wrapper {
   display: grid;
-  margin-top: 39px;
+  margin-top: 40px;
 
   @media (min-width: $tabletWidth) {
     grid-template-columns: 221px 221px;
-    gap: 32px 123px;
-    margin-top: 57px;
+    gap: 42px 123px;
+    margin-top: 62px;
   }
 
   @media (min-width: $desktopWidth) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+    margin-top: 61px;
   }
 }
 
@@ -399,7 +446,7 @@
   margin-top: 32px;
 
   @media (min-width: $tabletWidth) {
-    margin-top: 76px;
+    margin-top: 75px;
   }
 
   @media (min-width: $desktopWidth) {
@@ -423,17 +470,26 @@
     padding-right: 40px;
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 35px;
   }
 
   @media (min-width: $desktopWidth) {
     padding: 0;
-    margin-top: 61px;
+    margin-top: 66px;
+    margin-left: 1px;
   }
 }
 
 .program-selection__contacts-wrapper .program-selection__text-label {
   @media (min-width: $desktopWidth) {
     margin-top: 0;
+  }
+}
+
+.program-selection__contacts-wrapper .program-selection__text-input {
+  margin-left: 12px;
+
+  @media (min-width: $tabletWidth) {
+    margin-left: 16px;
   }
 }

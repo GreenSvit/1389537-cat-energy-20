@@ -6,8 +6,12 @@
   display: grid;
   gap: 20px;
 
+  @media (min-width: $tabletWidth) {
+    gap: 30px;
+  }
+
   @media (min-width: $desktopWidth) {
-    grid-template-columns: 570px 580px;
+    grid-template-columns: 570px 570px;
     gap: 80px;
   }
 }
@@ -15,19 +19,20 @@
 .programs__item {
   box-sizing: border-box;
   padding-left: 20px;
-  padding-top: 21px;
+  padding-top: 30px;
   padding-right: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 20px;
   background-color: $shadowWhite;
 
   @media (min-width: $tabletWidth) {
     padding-top: 77px;
-    padding-bottom: 53px;
+    padding-bottom: 57px;
     padding-left: 52px;
   }
 
-  @media (min-width: $tabletWidth) {
+  @media (min-width: $desktopWidth) {
     padding-top: 77px;
+    padding-bottom: 59px;
   }
 }
 
@@ -37,27 +42,28 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: normal;
-  padding-left: 71px;
+  padding-left: 72px;
   position: relative;
   overflow: visible;
 
   &::before {
     content: "";
-    top: -5px;
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   &--loss::before {
-    left: 2px;
+    left: 3px;
+    top: -9px;
     width: 50px;
     height: 53px;
     background-image: url("../img/icon-cat-slim-circle.svg");
   }
 
   &--set::before {
-    left: -7px;
+    top: -6px;
+    left: -6px;
     width: 67px;
     height: 50px;
     background-image: url("../img/icon-cat-pro-circle.svg");
@@ -69,17 +75,17 @@
     padding-left: 0;
 
     &--loss::before {
-      top: 4px;
-      left: 389px;
+      top: 3px;
+      left: 394px;
       width: 200px;
       height: 211px;
     }
 
     &--set::before {
-      top: 20px;
+      top: 14px;
       width: 268px;
       height: 200px;
-      left: 369px;
+      left: 358px;
     }
   }
 
@@ -91,7 +97,7 @@
     }
 
     &--loss::before {
-      top: -32px;
+      top: -36px;
       left: 0;
       width: 100px;
       height: 106px;
@@ -111,22 +117,40 @@
   font-family: $Arial;
   color: $deepGraphite;
   position: relative;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   border-bottom: solid 1px $borderGrey;
+  margin-bottom: 0;
+
+  .programs__title--set + & {
+    @media (min-width: $tabletWidth) {
+      width: 342px;
+    }
+
+    @media (min-width: $desktopWidth) {
+      width: 467px;
+    }
+  }
 
   @media (min-width: $tabletWidth) {
     width: 377px;
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
+    margin-top: 25px;
+    margin-bottom: 32px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktopWidth) {
-    margin-top: 73px;
+    margin-top: 74px;
+    width: 467px;
+    margin-bottom: 3px;
+    padding-bottom: 0;
   }
 }
 
 .programs__link {
+  display: inline-block;
   margin-top: 19px;
   text-decoration: none;
   font-size: 16px;
@@ -138,6 +162,10 @@
   @media (min-width: $tabletWidth) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin-top: 24px;
   }
 
   &:active {
@@ -152,7 +180,22 @@
     background-image: url("../img/icon-right-arrow-long.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    top: 6px;
-    right: -39px;
+    top: 2px;
+    right: -40px;
+
+    @media (min-width: $tabletWidth) {
+      top: 10px;
+      right: -51px;
+    }
+  }
+
+  &:hover::after {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+
+    @media (min-width: $desktopWidth) {
+      width: 32px;
+      height: 10px;
+      right: -60px;
+    }
   }
 }
