@@ -2,6 +2,7 @@
   max-height: 200px;
   transition-property: max-height;
   transition-duration: .5s;
+  overflow: hidden;
 }
 
 .main-nav--closed-animation {

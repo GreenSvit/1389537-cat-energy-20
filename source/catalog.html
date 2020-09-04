@@ -468,9 +468,7 @@
         </address>
       </div>
       <div class="contacts__map">
-        <iframe class="contacts__map-frame"
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3A747685d84176cc325a8439f1a8a929764192a926821b66a62c74653c4417b5a3&amp;source=constructor"
-          height="400" frameborder="0"></iframe>
+        <div class="contacts__map-frame" id="map"></div>
         <picture>
           <source type="image/webp" media="(min-width: 1440px)" srcset="
                 img/bg-map-desktop@1x.webp 1x,
@@ -533,6 +531,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
   <script src="js/script.js"></script>
 </body>
 
