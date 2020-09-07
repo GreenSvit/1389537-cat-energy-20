@@ -35,7 +35,6 @@ var weightField = document.querySelector('#weight');
 var ageField = document.querySelector('#age');
 var emailField = document.querySelector('#email');
 var phoneField = document.querySelector('#phone');
-var submitButton = document.querySelector('.program-selection__submit');
 
 var isStorageSupport = true;
 var storage = '';
