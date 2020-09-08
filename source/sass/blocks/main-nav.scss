@@ -3,6 +3,10 @@
   transition-property: max-height;
   transition-duration: 0.5s;
   overflow: hidden;
+
+  @media (min-width: $tabletWidth) {
+    overflow: visible;
+  }
 }
 
 .main-nav--closed-animation {

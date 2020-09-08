@@ -316,6 +316,10 @@
     margin-left: 18px;
   }
 
+  &:hover {
+    border-color: $lighterGrey2;
+  }
+
   &:focus {
     outline: 2px solid $deepGraphite;
 
@@ -363,6 +367,10 @@
   resize: none;
   height: 150px;
   margin-top: 34px;
+
+  &:hover {
+    border-color: $lighterGrey2;
+  }
 
   &:focus {
     outline: 2px solid $deepGraphite;
