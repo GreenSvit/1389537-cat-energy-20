@@ -5,6 +5,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Кэт Энерджи</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type=“font/woff2” crossorigin=“anonymous”>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type=“font/woff2” crossorigin=“anonymous”>
   <link rel="stylesheet" href="css/styles.min.css" />
 </head>
 
@@ -48,15 +51,17 @@
           <fieldset class="program-selection__field">
             <label class="program-selection__text-label">
               Имя:*
-              <input class="program-selection__text-input" type="text" required placeholder="Барсик" name="name" />
+              <input class="program-selection__text-input" id="name" type="text" required placeholder="Барсик"
+                name="name" />
             </label>
             <label class="program-selection__text-label">
               Вес (кг):*
-              <input class="program-selection__text-input" type="number" required placeholder="7" name="weight" />
+              <input class="program-selection__text-input" id="weight" type="number" required placeholder="7"
+                name="weight" />
             </label>
             <label class="program-selection__text-label">
               Возраст (лет):
-              <input class="program-selection__text-input" type="number" placeholder="7" name="age" />
+              <input class="program-selection__text-input" id="age" type="number" placeholder="7" name="age" />
             </label>
           </fieldset>
           <fieldset class="program-selection__field program-selection__field--reason">
@@ -86,16 +91,16 @@
           <div class="program-selection__contacts-wrapper">
             <label class="program-selection__text-label">
               E-mail:*
-              <input class="program-selection__text-input" type="email" placeholder="kuklachev@gmail.com" required
-                name="email" />
+              <input class="program-selection__text-input" id="email" type="email" placeholder="kuklachev@gmail.com"
+                required name="email" />
               <svg class="program-selection__icon program-selection__icon--mail" width="20" height="14">
                 <use xlink:href="img/sprite.svg#sprite-icon-mail"></use>
               </svg>
             </label>
             <label class="program-selection__text-label">
               Телефон:*
-              <input class="program-selection__text-input" type="tel" placeholder="8 (960) 900-60-90" required
-                name="telephone" />
+              <input class="program-selection__text-input" id="phone" type="tel" placeholder="8 (960) 900-60-90"
+                required name="telephone" />
               <svg class="program-selection__icon program-selection__icon--phone" width="20" height="20">
                 <use xlink:href="img/sprite.svg#sprite-icon-phone"></use>
               </svg>
@@ -155,9 +160,7 @@
         </address>
       </div>
       <div class="contacts__map">
-        <iframe class="contacts__map-frame"
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3A747685d84176cc325a8439f1a8a929764192a926821b66a62c74653c4417b5a3&amp;source=constructor"
-          height="400" frameborder="0"></iframe>
+        <div class="contacts__map-frame" id="map"></div>
         <picture>
           <source type="image/webp" media="(min-width: 1440px)" srcset="
                 img/bg-map-desktop@1x.webp 1x,
@@ -220,7 +223,8 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

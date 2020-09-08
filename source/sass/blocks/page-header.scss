@@ -44,8 +44,8 @@
   box-sizing: border-box;
   min-height: 62px;
   padding-right: 23px;
-    padding-top: 12px;
-    padding-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 15px;
 
   @media (max-width: $mobileWidth) {
     border-bottom: solid 1px $lighterGrey;
@@ -94,6 +94,8 @@
 }
 
 .page-header__nav {
+  width: 100%;
+
   @media (min-width: $tabletWidth) {
     margin-top: 19px;
   }
@@ -101,5 +103,6 @@
   @media (min-width: $desktopWidth) {
     margin-top: 2px;
     margin-right: 111px;
+    width: 478px;
   }
 }
