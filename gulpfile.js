@@ -34,7 +34,7 @@ exports.sourceCssClean = sourceCssClean;
 
 const copy = () => {
   return gulp
-    .src(['source/fonts/**/*.{woff,woff2}', 'source/img/**', 'source/js/**', 'source/favicon.ico'], { base: 'source' })
+    .src([ 'source/fonts/**/*.{woff,woff2}', 'source/img/**', 'source/js/**' ], { base: 'source' })
     .pipe(gulp.dest('build'));
 };
 
@@ -44,7 +44,7 @@ exports.copy = copy;
 
 const html = () => {
   return gulp
-    .src(['source/**/*.html'], { base: 'source' })
+    .src([ 'source/**/*.html' ], { base: 'source' })
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 };
@@ -53,17 +53,11 @@ exports.html = html;
 
 // Minify JS
 
-
 const minjs = () => {
-  return gulp
-    .src('source/js/script.js')
-    .pipe(uglify())
-    .pipe(rename('script.min.js'))
-    .pipe(gulp.dest('build/js'));
+  return gulp.src('source/js/script.js').pipe(uglify()).pipe(rename('script.min.js')).pipe(gulp.dest('build/js'));
 };
 
 exports.minjs = minjs;
-
 
 // Images
 
@@ -71,7 +65,7 @@ const images = () => {
   return gulp
     .src('source/img/**/*.{jpg,png,svg}')
     .pipe(
-      imagemin([imagemin.optipng({ optimizationLevel: 3 }), imagemin.mozjpeg({ progressive: true }), imagemin.svgo()])
+      imagemin([ imagemin.optipng({ optimizationLevel: 3 }), imagemin.mozjpeg({ progressive: true }), imagemin.svgo() ])
     );
 };
 
@@ -102,11 +96,11 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(
       sass({
-        includePaths: ['node_modules']
+        includePaths: [ 'node_modules' ]
       })
     )
     .pipe(gulp.dest('build/css'))
-    .pipe(postcss([autoprefixer()]))
+    .pipe(postcss([ autoprefixer() ]))
     .pipe(csso())
     .pipe(rename('styles.min.css'))
     .pipe(sourcemap.write('.'))
