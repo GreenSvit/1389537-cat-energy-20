@@ -34,7 +34,7 @@ exports.sourceCssClean = sourceCssClean;
 
 const copy = () => {
   return gulp
-    .src(['source/fonts/**/*.{woff,woff2}', 'source/img/**', 'source/js/**'], { base: 'source' })
+    .src(['source/fonts/**/*.{woff,woff2}', 'source/img/**', 'source/js/**', 'source/favicon.ico'], { base: 'source' })
     .pipe(gulp.dest('build'));
 };
 
